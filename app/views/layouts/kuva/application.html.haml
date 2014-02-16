@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title Kuva
+    = stylesheet_link_tag    "kuva/application", media: "all"
+    = javascript_include_tag "kuva/application"
+    = csrf_meta_tags
+
+  %body(class: params[:controller].parameterize)
+    = yield
