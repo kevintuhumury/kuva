@@ -14,6 +14,7 @@ Gem::Specification.new do |gem|
   gem.description = "This Rails Engine provides a Flickr gallery for use in your own Rails project."
 
   gem.files       = `git ls-files`.split("\n")
+  gem.test_files  = `git ls-files -- spec/**/*`.split("\n")
 
   gem.add_dependency "rails", "~> 4.0.3"
 
