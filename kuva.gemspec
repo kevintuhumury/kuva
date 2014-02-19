@@ -20,7 +20,7 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency "rspec-rails"
   gem.add_development_dependency "capybara"
-  gem.add_development_dependency "mysql2"
+  gem.add_development_dependency "sqlite3"
   gem.add_development_dependency "simplecov"
   gem.add_development_dependency "coveralls"
 end
