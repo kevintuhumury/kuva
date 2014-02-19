@@ -17,6 +17,7 @@ Gem::Specification.new do |gem|
   gem.test_files  = `git ls-files -- spec/**/*`.split("\n")
 
   gem.add_dependency "rails", "~> 4.0.3"
+  gem.add_dependency "flickraw"
 
   gem.add_development_dependency "rspec-rails"
   gem.add_development_dependency "capybara"

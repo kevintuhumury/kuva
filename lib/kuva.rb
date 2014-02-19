@@ -1,3 +1,5 @@
+require "flickraw"
+
 module Kuva
 end
 
