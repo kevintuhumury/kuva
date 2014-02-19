@@ -17,5 +17,6 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "rails", "~> 4.0.3"
 
+  gem.add_development_dependency "rspec-rails"
   gem.add_development_dependency "mysql2"
 end
