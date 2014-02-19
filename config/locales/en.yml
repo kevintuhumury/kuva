@@ -1,0 +1,7 @@
+en:
+  kuva:
+    authentication:
+      url: "\nCopy the URL below and follow the steps on Flickr to authorize kuva:\n%{url}"
+      code: "\nOnce you've authorized kuva, you'll receive a code (in the form of xxx-xxx-xxx) from Flickr. Copy and paste that code here:"
+      success: "\nYou've successfully authenticated kuva to use your account: '%{account}' with the following token '%{token}' and secret '%{secret}'."
+      error: "Authentication with Flickr failed: %{message}"
