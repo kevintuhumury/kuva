@@ -130,3 +130,4 @@ DEPENDENCIES
   kuva!
   mysql2
   rspec-rails
+  simplecov
