@@ -21,6 +21,9 @@ Dir[File.join(ENGINE_RAILS_ROOT, "spec/support/**/*.rb")].each { |file| require 
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
 RSpec.configure do |config|
+
+  config.treat_symbols_as_metadata_keys_with_true_values = true
+
   # ## Mock Framework
   #
   # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:
