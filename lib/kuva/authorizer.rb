@@ -8,8 +8,8 @@ module Kuva
     end
 
     def initialize
-      FlickRaw.api_key       = CONFIG[:api_key]
-      FlickRaw.shared_secret = CONFIG[:shared_secret]
+      FlickRaw.api_key       = Kuva.api_key
+      FlickRaw.shared_secret = Kuva.shared_secret
     end
 
     def authorize
