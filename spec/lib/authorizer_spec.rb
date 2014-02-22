@@ -10,7 +10,7 @@ module Kuva
       end
     end
 
-    context "#authorize" do
+    context "#authorize", :vcr do
       before do
         allow(STDIN).to receive(:gets).and_return "<authorization_code>"
       end
