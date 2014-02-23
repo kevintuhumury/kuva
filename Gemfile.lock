@@ -142,4 +142,4 @@ DEPENDENCIES
   simplecov
   sqlite3
   vcr
-  webmock (< 1.16)
+  webmock (~> 1.15.0)
