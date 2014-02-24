@@ -18,4 +18,5 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "rails", "~> 4.0.3"
   gem.add_dependency "flickraw"
+  gem.add_dependency "haml"
 end
