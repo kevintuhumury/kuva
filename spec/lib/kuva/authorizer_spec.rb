@@ -3,6 +3,23 @@ require "spec_helper"
 module Kuva
   describe Authorizer do
 
+    context ".new" do
+      before do
+        allow(Kuva).to receive(:api_key).and_return "<api_key>"
+        allow(Kuva).to receive(:shared_secret).and_return "<shared_secret>"
+      end
+
+      it "configures the FlickRaw API key" do
+        described_class.new
+        expect(FlickRaw.api_key).to eq Kuva.api_key
+      end
+
+      it "configures the FlickRaw shared secret" do
+        described_class.new
+        expect(FlickRaw.shared_secret).to eq Kuva.shared_secret
+      end
+    end
+
     context ".authorize" do
       it "authorizes" do
         allow_any_instance_of(Authorizer).to receive :authorize
