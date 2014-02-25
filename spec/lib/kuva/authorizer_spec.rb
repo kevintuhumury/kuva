@@ -11,12 +11,12 @@ module Kuva
 
       it "configures the FlickRaw API key" do
         described_class.new
-        expect(FlickRaw.api_key).to eq Kuva.api_key
+        expect(FlickRaw.api_key).to eq "<api_key>"
       end
 
       it "configures the FlickRaw shared secret" do
         described_class.new
-        expect(FlickRaw.shared_secret).to eq Kuva.shared_secret
+        expect(FlickRaw.shared_secret).to eq "<shared_secret>"
       end
     end
 
