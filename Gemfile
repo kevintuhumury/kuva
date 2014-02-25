@@ -19,6 +19,7 @@ group :test do
   gem "capybara"
   gem "vcr"
   gem "webmock", "~> 1.15.0"
+  gem "ammeter"
   gem "simplecov"
   gem "coveralls"
 end
