@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: method=flickr.reflection.getMethods&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.7
+      Authorization:
+      - OAuth realm="http://api.flickr.com/services/rest/", oauth_consumer_key="<OAUTH_CONSUMER_KEY>",
+        oauth_nonce="<OAUTH_NONCE>", oauth_signature="<OAUTH_SIGNATURE>", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393403888", oauth_token="", oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 26 Feb 2014 08:38:09 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www11.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '91'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts117.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.1 [cMsSf ]),
+        http/1.1 r19.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"stat":"fail", "code":100, "message":"Invalid API Key (Key has invalid
+        format)"}'
+    http_version: 
+  recorded_at: Wed, 26 Feb 2014 08:38:09 GMT
+recorded_with: VCR 2.8.0
