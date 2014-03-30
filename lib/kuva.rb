@@ -10,4 +10,5 @@ module Kuva
 end
 
 require "kuva/engine"
+require "kuva/elements/url_info"
 require "kuva/authorizer"
