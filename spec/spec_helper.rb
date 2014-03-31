@@ -24,6 +24,7 @@ ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
 RSpec.configure do |config|
 
+  # instead of specifying ":vcr => true", we can specify just ":vcr"
   config.treat_symbols_as_metadata_keys_with_true_values = true
 
   # ## Mock Framework
