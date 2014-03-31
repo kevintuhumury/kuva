@@ -16,7 +16,7 @@ http_interactions:
       Authorization:
       - OAuth realm="http://api.flickr.com/services/rest/", oauth_consumer_key="<OAUTH_CONSUMER_KEY>",
         oauth_nonce="<OAUTH_NONCE>", oauth_signature="<OAUTH_SIGNATURE>", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1393403713", oauth_token="", oauth_version="1.0"
+        oauth_timestamp="1396305068", oauth_token="", oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
   response:
@@ -25,7 +25,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 26 Feb 2014 08:35:14 GMT
+      - Mon, 31 Mar 2014 22:31:05 GMT
       P3p:
       - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
         TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
@@ -33,7 +33,7 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www9.flickr.bf1.yahoo.com
+      - www60.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Content-Length:
@@ -41,10 +41,10 @@ http_interactions:
       Content-Type:
       - application/json
       Age:
-      - '0'
+      - '3'
       Via:
-      - http/1.1 fts106.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.1 [cMsSf ]),
-        http/1.1 r10.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      - http/1.1 fts119.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r09.ycpi.ir2.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
       Server:
       - ATS
       Connection:
@@ -155,5 +155,5 @@ http_interactions:
         {"_content":"flickr.urls.lookupGroup"}, {"_content":"flickr.urls.lookupUser"}]},
         "stat":"ok"}'
     http_version: 
-  recorded_at: Wed, 26 Feb 2014 08:35:14 GMT
+  recorded_at: Mon, 31 Mar 2014 22:31:09 GMT
 recorded_with: VCR 2.8.0
