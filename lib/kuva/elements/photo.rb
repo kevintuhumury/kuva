@@ -31,7 +31,7 @@ module Kuva
       private
 
       def info
-        @info ||= Kuva::Elements::UrlInfo.new id, farm, server, secret
+        @info ||= Kuva::Elements::UrlInfo.new(id, farm, server, secret)
       end
 
     end
