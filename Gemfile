@@ -11,6 +11,7 @@ gemspec
 # your gem to rubygems.org.
 
 group :development, :test do
+  gem "dotenv-rails"
   gem "rspec-rails"
   gem "sqlite3"
 end
