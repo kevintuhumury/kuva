@@ -24,6 +24,14 @@ ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
 RSpec.configure do |config|
 
+  # setup the flickr configuration for the specs
+  config.before do
+    FlickRaw.api_key       = Kuva.api_key       = ENV["KUVA_API_KEY"]
+    FlickRaw.shared_secret = Kuva.shared_secret = ENV["KUVA_SHARED_SECRET"]
+    flickr.access_token    = Kuva.access_token  = ENV["KUVA_ACCESS_TOKEN"]
+    flickr.access_secret   = Kuva.access_secret = ENV["KUVA_ACCESS_SECRET"]
+  end
+
   # instead of specifying ":vcr => true", we can specify just ":vcr"
   config.treat_symbols_as_metadata_keys_with_true_values = true
 
