@@ -10,13 +10,8 @@ VCR.configure do |config|
     match_requests_on: [:method, :uri, :body]
   }
 
-  config.filter_sensitive_data("<SHARED_SECRET>") { FlickRaw.shared_secret }
-
-  config.before_record do |interaction|
-    VCR::FilterData.new(interaction).filter_before_record
-  end
-
-  config.before_playback do |interaction|
-    VCR::FilterData.new(interaction).filter_before_playback
-  end
+  config.filter_sensitive_data("<KUVA_API_KEY>") { Kuva.api_key }
+  config.filter_sensitive_data("<KUVA_SHARED_SECRET>") { Kuva.shared_secret }
+  config.filter_sensitive_data("<KUVA_ACCESS_TOKEN>") { Kuva.access_token }
+  config.filter_sensitive_data("<KUVA_ACCESS_SECRET>") { Kuva.access_secret }
 end
