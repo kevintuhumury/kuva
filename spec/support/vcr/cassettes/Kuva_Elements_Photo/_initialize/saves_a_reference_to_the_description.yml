@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photo_id=8317914535&method=flickr.photos.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="w6mrz%2BQa1X2asWj05q0YztZRRX0rG0cY7WNuNUub9xQ%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397347615", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 13 Apr 2014 00:06:55 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www21.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '1153'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts101.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r15.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photo":{"id":"8317914535", "secret":"c7393787f3", "server":"8217",
+        "farm":9, "dateuploaded":"1356715395", "isfavorite":0, "license":"0", "safety_level":"0",
+        "rotation":0, "originalsecret":"2e841b1a95", "originalformat":"jpg", "owner":{"nsid":"8558751@N06",
+        "username":"ktnl", "realname":"Kevin Tuhumury", "location":"", "iconserver":"213",
+        "iconfarm":1, "path_alias":"kevintuhumury"}, "title":{"_content":"Mus\u00e9e
+        du Louvre"}, "description":{"_content":"These shots were taken in Paris, France
+        in December 2012. Most of them are taken with my Nikon D80 and Nikkor 50mm
+        f\/1.8 or Tokina 12-24mm f\/4."}, "visibility":{"ispublic":1, "isfriend":0,
+        "isfamily":0}, "dates":{"posted":"1356715395", "taken":"2012-12-02 16:03:55",
+        "takengranularity":"0", "lastupdate":"1356715869"}, "permissions":{"permcomment":3,
+        "permaddmeta":2}, "views":"290", "editability":{"cancomment":1, "canaddmeta":1},
+        "publiceditability":{"cancomment":1, "canaddmeta":0}, "usage":{"candownload":1,
+        "canblog":1, "canprint":1, "canshare":1}, "comments":{"_content":"0"}, "notes":{"note":[]},
+        "people":{"haspeople":0}, "tags":{"tag":[{"id":"8513429-8317914535-484", "author":"8558751@N06",
+        "authorname":"ktnl", "raw":"Paris", "_content":"paris", "machine_tag":0},
+        {"id":"8513429-8317914535-487", "author":"8558751@N06", "authorname":"ktnl",
+        "raw":"France", "_content":"france", "machine_tag":0}, {"id":"8513429-8317914535-9178",
+        "author":"8558751@N06", "authorname":"ktnl", "raw":"Eiffel", "_content":"eiffel",
+        "machine_tag":0}, {"id":"8513429-8317914535-6973", "author":"8558751@N06",
+        "authorname":"ktnl", "raw":"Eiffel tower", "_content":"eiffeltower", "machine_tag":0},
+        {"id":"8513429-8317914535-5080", "author":"8558751@N06", "authorname":"ktnl",
+        "raw":"Louvre", "_content":"louvre", "machine_tag":0}, {"id":"8513429-8317914535-44616",
+        "author":"8558751@N06", "authorname":"ktnl", "raw":"Arc de Triomphe", "_content":"arcdetriomphe",
+        "machine_tag":0}, {"id":"8513429-8317914535-11119", "author":"8558751@N06",
+        "authorname":"ktnl", "raw":"Notre Dame", "_content":"notredame", "machine_tag":0},
+        {"id":"8513429-8317914535-1128", "author":"8558751@N06", "authorname":"ktnl",
+        "raw":"Seine", "_content":"seine", "machine_tag":0}, {"id":"8513429-8317914535-315853",
+        "author":"8558751@N06", "authorname":"ktnl", "raw":"Champs-\u00c9lys\u00e9es",
+        "_content":"champs\u00e9lys\u00e9es", "machine_tag":0}]}, "location":{"latitude":48.861948,
+        "longitude":2.335174, "accuracy":"15", "context":"0", "neighbourhood":{"_content":"Saint-Germain-L''auxerrois",
+        "place_id":"36CFHdZUV7KNOKK4LQ", "woeid":"55843752"}, "locality":{"_content":"Paris",
+        "place_id":"EsIQUYZXU79_kEA", "woeid":"615702"}, "county":{"_content":"Paris",
+        "place_id":".tpTHPFQUL.gM81.cQ", "woeid":"12597155"}, "region":{"_content":"Ile-de-France",
+        "place_id":"QLdv_.RWU7_jEfrE", "woeid":"7153319"}, "country":{"_content":"France",
+        "place_id":"lbWye9tTUb6GOcp80w", "woeid":"23424819"}, "place_id":"36CFHdZUV7KNOKK4LQ",
+        "woeid":"55843752"}, "geoperms":{"ispublic":1, "iscontact":0, "isfriend":0,
+        "isfamily":0}, "urls":{"url":[{"type":"photopage", "_content":"https:\/\/www.flickr.com\/photos\/kevintuhumury\/8317914535\/"}]},
+        "media":"photo"}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Sun, 13 Apr 2014 00:06:55 GMT
+recorded_with: VCR 2.9.0

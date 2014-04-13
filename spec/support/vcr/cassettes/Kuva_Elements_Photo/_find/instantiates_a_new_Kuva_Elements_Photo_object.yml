@@ -1,0 +1,252 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photo_id=8317914535&method=flickr.photos.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="7hrMQjpiFbDiKESOdfUCT%2FRupI04eCYV1Rv%2FAZPWRAU%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397347618", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 13 Apr 2014 00:06:58 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www67.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '1153'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts115.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r15.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photo":{"id":"8317914535", "secret":"c7393787f3", "server":"8217",
+        "farm":9, "dateuploaded":"1356715395", "isfavorite":0, "license":"0", "safety_level":"0",
+        "rotation":0, "originalsecret":"2e841b1a95", "originalformat":"jpg", "owner":{"nsid":"8558751@N06",
+        "username":"ktnl", "realname":"Kevin Tuhumury", "location":"", "iconserver":"213",
+        "iconfarm":1, "path_alias":"kevintuhumury"}, "title":{"_content":"Mus\u00e9e
+        du Louvre"}, "description":{"_content":"These shots were taken in Paris, France
+        in December 2012. Most of them are taken with my Nikon D80 and Nikkor 50mm
+        f\/1.8 or Tokina 12-24mm f\/4."}, "visibility":{"ispublic":1, "isfriend":0,
+        "isfamily":0}, "dates":{"posted":"1356715395", "taken":"2012-12-02 16:03:55",
+        "takengranularity":"0", "lastupdate":"1356715869"}, "permissions":{"permcomment":3,
+        "permaddmeta":2}, "views":"290", "editability":{"cancomment":1, "canaddmeta":1},
+        "publiceditability":{"cancomment":1, "canaddmeta":0}, "usage":{"candownload":1,
+        "canblog":1, "canprint":1, "canshare":1}, "comments":{"_content":"0"}, "notes":{"note":[]},
+        "people":{"haspeople":0}, "tags":{"tag":[{"id":"8513429-8317914535-484", "author":"8558751@N06",
+        "authorname":"ktnl", "raw":"Paris", "_content":"paris", "machine_tag":0},
+        {"id":"8513429-8317914535-487", "author":"8558751@N06", "authorname":"ktnl",
+        "raw":"France", "_content":"france", "machine_tag":0}, {"id":"8513429-8317914535-9178",
+        "author":"8558751@N06", "authorname":"ktnl", "raw":"Eiffel", "_content":"eiffel",
+        "machine_tag":0}, {"id":"8513429-8317914535-6973", "author":"8558751@N06",
+        "authorname":"ktnl", "raw":"Eiffel tower", "_content":"eiffeltower", "machine_tag":0},
+        {"id":"8513429-8317914535-5080", "author":"8558751@N06", "authorname":"ktnl",
+        "raw":"Louvre", "_content":"louvre", "machine_tag":0}, {"id":"8513429-8317914535-44616",
+        "author":"8558751@N06", "authorname":"ktnl", "raw":"Arc de Triomphe", "_content":"arcdetriomphe",
+        "machine_tag":0}, {"id":"8513429-8317914535-11119", "author":"8558751@N06",
+        "authorname":"ktnl", "raw":"Notre Dame", "_content":"notredame", "machine_tag":0},
+        {"id":"8513429-8317914535-1128", "author":"8558751@N06", "authorname":"ktnl",
+        "raw":"Seine", "_content":"seine", "machine_tag":0}, {"id":"8513429-8317914535-315853",
+        "author":"8558751@N06", "authorname":"ktnl", "raw":"Champs-\u00c9lys\u00e9es",
+        "_content":"champs\u00e9lys\u00e9es", "machine_tag":0}]}, "location":{"latitude":48.861948,
+        "longitude":2.335174, "accuracy":"15", "context":"0", "neighbourhood":{"_content":"Saint-Germain-L''auxerrois",
+        "place_id":"36CFHdZUV7KNOKK4LQ", "woeid":"55843752"}, "locality":{"_content":"Paris",
+        "place_id":"EsIQUYZXU79_kEA", "woeid":"615702"}, "county":{"_content":"Paris",
+        "place_id":".tpTHPFQUL.gM81.cQ", "woeid":"12597155"}, "region":{"_content":"Ile-de-France",
+        "place_id":"QLdv_.RWU7_jEfrE", "woeid":"7153319"}, "country":{"_content":"France",
+        "place_id":"lbWye9tTUb6GOcp80w", "woeid":"23424819"}, "place_id":"36CFHdZUV7KNOKK4LQ",
+        "woeid":"55843752"}, "geoperms":{"ispublic":1, "iscontact":0, "isfriend":0,
+        "isfamily":0}, "urls":{"url":[{"type":"photopage", "_content":"https:\/\/www.flickr.com\/photos\/kevintuhumury\/8317914535\/"}]},
+        "media":"photo"}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Sun, 13 Apr 2014 00:06:59 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: method=flickr.reflection.getMethods&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="8XHiOGlBlCVC1KD4da6qT%2F5khoJriyrzhpu5EZbaYTY%3D", oauth_signature="<KUVA_SHARED_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397349806", oauth_token="",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 13 Apr 2014 00:43:26 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www53.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '1432'
+      Content-Type:
+      - application/json
+      Age:
+      - '3'
+      Via:
+      - http/1.1 fts122.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r15.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"methods":{"method":[{"_content":"flickr.activity.userComments"},
+        {"_content":"flickr.activity.userPhotos"}, {"_content":"flickr.auth.checkToken"},
+        {"_content":"flickr.auth.getFrob"}, {"_content":"flickr.auth.getFullToken"},
+        {"_content":"flickr.auth.getToken"}, {"_content":"flickr.auth.oauth.checkToken"},
+        {"_content":"flickr.auth.oauth.getAccessToken"}, {"_content":"flickr.blogs.getList"},
+        {"_content":"flickr.blogs.getServices"}, {"_content":"flickr.blogs.postPhoto"},
+        {"_content":"flickr.cameras.getBrandModels"}, {"_content":"flickr.cameras.getBrands"},
+        {"_content":"flickr.collections.getInfo"}, {"_content":"flickr.collections.getTree"},
+        {"_content":"flickr.commons.getInstitutions"}, {"_content":"flickr.contacts.getList"},
+        {"_content":"flickr.contacts.getListRecentlyUploaded"}, {"_content":"flickr.contacts.getPublicList"},
+        {"_content":"flickr.contacts.getTaggingSuggestions"}, {"_content":"flickr.favorites.add"},
+        {"_content":"flickr.favorites.getContext"}, {"_content":"flickr.favorites.getList"},
+        {"_content":"flickr.favorites.getPublicList"}, {"_content":"flickr.favorites.remove"},
+        {"_content":"flickr.galleries.addPhoto"}, {"_content":"flickr.galleries.create"},
+        {"_content":"flickr.galleries.editMeta"}, {"_content":"flickr.galleries.editPhoto"},
+        {"_content":"flickr.galleries.editPhotos"}, {"_content":"flickr.galleries.getInfo"},
+        {"_content":"flickr.galleries.getList"}, {"_content":"flickr.galleries.getListForPhoto"},
+        {"_content":"flickr.galleries.getPhotos"}, {"_content":"flickr.groups.browse"},
+        {"_content":"flickr.groups.discuss.replies.add"}, {"_content":"flickr.groups.discuss.replies.delete"},
+        {"_content":"flickr.groups.discuss.replies.edit"}, {"_content":"flickr.groups.discuss.replies.getInfo"},
+        {"_content":"flickr.groups.discuss.replies.getList"}, {"_content":"flickr.groups.discuss.topics.add"},
+        {"_content":"flickr.groups.discuss.topics.getInfo"}, {"_content":"flickr.groups.discuss.topics.getList"},
+        {"_content":"flickr.groups.getInfo"}, {"_content":"flickr.groups.join"}, {"_content":"flickr.groups.joinRequest"},
+        {"_content":"flickr.groups.leave"}, {"_content":"flickr.groups.members.getList"},
+        {"_content":"flickr.groups.pools.add"}, {"_content":"flickr.groups.pools.getContext"},
+        {"_content":"flickr.groups.pools.getGroups"}, {"_content":"flickr.groups.pools.getPhotos"},
+        {"_content":"flickr.groups.pools.remove"}, {"_content":"flickr.groups.search"},
+        {"_content":"flickr.interestingness.getList"}, {"_content":"flickr.machinetags.getNamespaces"},
+        {"_content":"flickr.machinetags.getPairs"}, {"_content":"flickr.machinetags.getPredicates"},
+        {"_content":"flickr.machinetags.getRecentValues"}, {"_content":"flickr.machinetags.getValues"},
+        {"_content":"flickr.panda.getList"}, {"_content":"flickr.panda.getPhotos"},
+        {"_content":"flickr.people.findByEmail"}, {"_content":"flickr.people.findByUsername"},
+        {"_content":"flickr.people.getGroups"}, {"_content":"flickr.people.getInfo"},
+        {"_content":"flickr.people.getLimits"}, {"_content":"flickr.people.getPhotos"},
+        {"_content":"flickr.people.getPhotosOf"}, {"_content":"flickr.people.getPublicGroups"},
+        {"_content":"flickr.people.getPublicPhotos"}, {"_content":"flickr.people.getUploadStatus"},
+        {"_content":"flickr.photos.addTags"}, {"_content":"flickr.photos.comments.addComment"},
+        {"_content":"flickr.photos.comments.deleteComment"}, {"_content":"flickr.photos.comments.editComment"},
+        {"_content":"flickr.photos.comments.getList"}, {"_content":"flickr.photos.comments.getRecentForContacts"},
+        {"_content":"flickr.photos.delete"}, {"_content":"flickr.photos.geo.batchCorrectLocation"},
+        {"_content":"flickr.photos.geo.correctLocation"}, {"_content":"flickr.photos.geo.getLocation"},
+        {"_content":"flickr.photos.geo.getPerms"}, {"_content":"flickr.photos.geo.photosForLocation"},
+        {"_content":"flickr.photos.geo.removeLocation"}, {"_content":"flickr.photos.geo.setContext"},
+        {"_content":"flickr.photos.geo.setLocation"}, {"_content":"flickr.photos.geo.setPerms"},
+        {"_content":"flickr.photos.getAllContexts"}, {"_content":"flickr.photos.getContactsPhotos"},
+        {"_content":"flickr.photos.getContactsPublicPhotos"}, {"_content":"flickr.photos.getContext"},
+        {"_content":"flickr.photos.getCounts"}, {"_content":"flickr.photos.getExif"},
+        {"_content":"flickr.photos.getFavorites"}, {"_content":"flickr.photos.getInfo"},
+        {"_content":"flickr.photos.getNotInSet"}, {"_content":"flickr.photos.getPerms"},
+        {"_content":"flickr.photos.getRecent"}, {"_content":"flickr.photos.getSizes"},
+        {"_content":"flickr.photos.getUntagged"}, {"_content":"flickr.photos.getWithGeoData"},
+        {"_content":"flickr.photos.getWithoutGeoData"}, {"_content":"flickr.photos.licenses.getInfo"},
+        {"_content":"flickr.photos.licenses.setLicense"}, {"_content":"flickr.photos.notes.add"},
+        {"_content":"flickr.photos.notes.delete"}, {"_content":"flickr.photos.notes.edit"},
+        {"_content":"flickr.photos.people.add"}, {"_content":"flickr.photos.people.delete"},
+        {"_content":"flickr.photos.people.deleteCoords"}, {"_content":"flickr.photos.people.editCoords"},
+        {"_content":"flickr.photos.people.getList"}, {"_content":"flickr.photos.recentlyUpdated"},
+        {"_content":"flickr.photos.removeTag"}, {"_content":"flickr.photos.search"},
+        {"_content":"flickr.photos.setContentType"}, {"_content":"flickr.photos.setDates"},
+        {"_content":"flickr.photos.setMeta"}, {"_content":"flickr.photos.setPerms"},
+        {"_content":"flickr.photos.setSafetyLevel"}, {"_content":"flickr.photos.setTags"},
+        {"_content":"flickr.photos.suggestions.approveSuggestion"}, {"_content":"flickr.photos.suggestions.getList"},
+        {"_content":"flickr.photos.suggestions.rejectSuggestion"}, {"_content":"flickr.photos.suggestions.removeSuggestion"},
+        {"_content":"flickr.photos.suggestions.suggestLocation"}, {"_content":"flickr.photos.transform.rotate"},
+        {"_content":"flickr.photos.upload.checkTickets"}, {"_content":"flickr.photosets.addPhoto"},
+        {"_content":"flickr.photosets.comments.addComment"}, {"_content":"flickr.photosets.comments.deleteComment"},
+        {"_content":"flickr.photosets.comments.editComment"}, {"_content":"flickr.photosets.comments.getList"},
+        {"_content":"flickr.photosets.create"}, {"_content":"flickr.photosets.delete"},
+        {"_content":"flickr.photosets.editMeta"}, {"_content":"flickr.photosets.editPhotos"},
+        {"_content":"flickr.photosets.getContext"}, {"_content":"flickr.photosets.getInfo"},
+        {"_content":"flickr.photosets.getList"}, {"_content":"flickr.photosets.getPhotos"},
+        {"_content":"flickr.photosets.orderSets"}, {"_content":"flickr.photosets.removePhoto"},
+        {"_content":"flickr.photosets.removePhotos"}, {"_content":"flickr.photosets.reorderPhotos"},
+        {"_content":"flickr.photosets.setPrimaryPhoto"}, {"_content":"flickr.places.find"},
+        {"_content":"flickr.places.findByLatLon"}, {"_content":"flickr.places.getChildrenWithPhotosPublic"},
+        {"_content":"flickr.places.getInfo"}, {"_content":"flickr.places.getInfoByUrl"},
+        {"_content":"flickr.places.getPlaceTypes"}, {"_content":"flickr.places.getShapeHistory"},
+        {"_content":"flickr.places.getTopPlacesList"}, {"_content":"flickr.places.placesForBoundingBox"},
+        {"_content":"flickr.places.placesForContacts"}, {"_content":"flickr.places.placesForTags"},
+        {"_content":"flickr.places.placesForUser"}, {"_content":"flickr.places.resolvePlaceId"},
+        {"_content":"flickr.places.resolvePlaceURL"}, {"_content":"flickr.places.tagsForPlace"},
+        {"_content":"flickr.prefs.getContentType"}, {"_content":"flickr.prefs.getGeoPerms"},
+        {"_content":"flickr.prefs.getHidden"}, {"_content":"flickr.prefs.getPrivacy"},
+        {"_content":"flickr.prefs.getSafetyLevel"}, {"_content":"flickr.push.getSubscriptions"},
+        {"_content":"flickr.push.getTopics"}, {"_content":"flickr.push.subscribe"},
+        {"_content":"flickr.push.unsubscribe"}, {"_content":"flickr.reflection.getMethodInfo"},
+        {"_content":"flickr.reflection.getMethods"}, {"_content":"flickr.stats.getCollectionDomains"},
+        {"_content":"flickr.stats.getCollectionReferrers"}, {"_content":"flickr.stats.getCollectionStats"},
+        {"_content":"flickr.stats.getCSVFiles"}, {"_content":"flickr.stats.getPhotoDomains"},
+        {"_content":"flickr.stats.getPhotoReferrers"}, {"_content":"flickr.stats.getPhotosetDomains"},
+        {"_content":"flickr.stats.getPhotosetReferrers"}, {"_content":"flickr.stats.getPhotosetStats"},
+        {"_content":"flickr.stats.getPhotoStats"}, {"_content":"flickr.stats.getPhotostreamDomains"},
+        {"_content":"flickr.stats.getPhotostreamReferrers"}, {"_content":"flickr.stats.getPhotostreamStats"},
+        {"_content":"flickr.stats.getPopularPhotos"}, {"_content":"flickr.stats.getTotalViews"},
+        {"_content":"flickr.tags.getClusterPhotos"}, {"_content":"flickr.tags.getClusters"},
+        {"_content":"flickr.tags.getHotList"}, {"_content":"flickr.tags.getListPhoto"},
+        {"_content":"flickr.tags.getListUser"}, {"_content":"flickr.tags.getListUserPopular"},
+        {"_content":"flickr.tags.getListUserRaw"}, {"_content":"flickr.tags.getMostFrequentlyUsed"},
+        {"_content":"flickr.tags.getRelated"}, {"_content":"flickr.test.echo"}, {"_content":"flickr.test.login"},
+        {"_content":"flickr.test.null"}, {"_content":"flickr.urls.getGroup"}, {"_content":"flickr.urls.getUserPhotos"},
+        {"_content":"flickr.urls.getUserProfile"}, {"_content":"flickr.urls.lookupGallery"},
+        {"_content":"flickr.urls.lookupGroup"}, {"_content":"flickr.urls.lookupUser"}]},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Sun, 13 Apr 2014 00:43:27 GMT
+recorded_with: VCR 2.9.0
