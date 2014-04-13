@@ -27,7 +27,7 @@ module Kuva
       end
     end
 
-    context "#authorize", :vcr do
+    context "#authorize" do
       before do
         allow(STDIN).to receive(:gets).and_return "<authorization_code>"
       end
@@ -36,18 +36,18 @@ module Kuva
         capture(:stdout) { subject.authorize }
       end
 
-      it "outputs a notice about the authentication url" do
-        allow(subject).to receive(:authentication_url).and_return "<url>"
-        expect(output).to include "\nCopy the URL below and follow the steps on Flickr to authorize kuva:\n<url>"
-      end
-
-      it "outputs a notice about the authentication code" do
-        expect(output).to include "\nOnce you've authorized kuva, you'll receive a code (in the form of xxx-xxx-xxx) from Flickr. Copy and paste that code here:\n"
-      end
-
       context "with a valid authentication code" do
         before do
           allow(subject).to receive(:flickr).and_return double.as_null_object
+        end
+
+        it "outputs a notice about the authentication url" do
+          allow(subject).to receive(:authentication_url).and_return "<url>"
+          expect(output).to include "\nCopy the URL below and follow the steps on Flickr to authorize kuva:\n<url>"
+        end
+
+        it "outputs a notice about the authentication code" do
+          expect(output).to include "\nOnce you've authorized kuva, you'll receive a code (in the form of xxx-xxx-xxx) from Flickr. Copy and paste that code here:\n"
         end
 
         it "outputs a confirmation notice" do
