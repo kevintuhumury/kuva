@@ -4,6 +4,9 @@ require "haml"
 module Kuva
   mattr_accessor :api_key, :shared_secret, :access_token, :access_secret
 
+  mattr_accessor :cache_expiration
+  @@cache_expiration = 7.days
+
   def self.setup
     yield self
   end

@@ -26,4 +26,9 @@ Kuva.setup do |config|
   # Once you've done that, enable this configuration option and set
   # it's value.
   # config.access_secret = "ACCESS_SECRET"
+
+  # Kuva caches the Flickr API calls. By default these API calls will
+  # expire in 7 days time. If you'd like to change that, adjust it's
+  # value below.
+  # config.cache_expiration = 7.days
 end
