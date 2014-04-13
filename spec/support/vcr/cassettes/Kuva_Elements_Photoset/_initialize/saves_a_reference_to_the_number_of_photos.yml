@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157632367381040&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="OvRpLKZcz0WcRWl9RgpAEDltWhwQ2BQaugHy4Ivr7VU%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397347628", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 13 Apr 2014 00:07:07 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www315.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '364'
+      Content-Type:
+      - application/json
+      Age:
+      - '3'
+      Via:
+      - http/1.1 fts123.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r15.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157632367381040", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"8318972536", "secret":"eda82f692f", "server":"8499", "farm":9,
+        "photos":28, "count_views":"31", "count_comments":"0", "count_photos":"28",
+        "count_videos":0, "title":{"_content":"Paris"}, "description":{"_content":"These
+        shots were taken in Paris, France in December 2012. Most of them are taken
+        with my Nikon D80 and Nikkor 50mm f\/1.8 or Tokina 12-24mm f\/4."}, "can_comment":1,
+        "date_create":"1356715289", "date_update":"1356717162", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Sun, 13 Apr 2014 00:07:08 GMT
+recorded_with: VCR 2.9.0

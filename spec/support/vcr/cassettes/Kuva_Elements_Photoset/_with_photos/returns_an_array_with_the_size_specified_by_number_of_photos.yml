@@ -1,0 +1,162 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157632367381040&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="%2FkRjQlE6y8veIqpWnlzt8R4a%2BW81pTzSoMlIvKvLCls%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397347621", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 13 Apr 2014 00:07:01 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www238.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '364'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts116.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r15.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157632367381040", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"8318972536", "secret":"eda82f692f", "server":"8499", "farm":9,
+        "photos":28, "count_views":"31", "count_comments":"0", "count_photos":"28",
+        "count_videos":0, "title":{"_content":"Paris"}, "description":{"_content":"These
+        shots were taken in Paris, France in December 2012. Most of them are taken
+        with my Nikon D80 and Nikkor 50mm f\/1.8 or Tokina 12-24mm f\/4."}, "can_comment":1,
+        "date_create":"1356715289", "date_update":"1356717162", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Sun, 13 Apr 2014 00:07:02 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157632367381040&method=flickr.photosets.getPhotos&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="gbHmITVs1v2yyyWBGy9fRhZqkj754acTMdcUvSkOMXc%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397347622", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 13 Apr 2014 00:07:02 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www216.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '885'
+      Content-Type:
+      - application/json
+      Age:
+      - '1'
+      Via:
+      - http/1.1 fts106.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r15.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157632367381040", "primary":"8318972536", "owner":"8558751@N06",
+        "ownername":"ktnl", "photo":[{"id":"8318972536", "secret":"eda82f692f", "server":"8499",
+        "farm":9, "title":"Top of the Eiffel Tower", "isprimary":"1"}, {"id":"8317914535",
+        "secret":"c7393787f3", "server":"8217", "farm":9, "title":"Mus\u00e9e du Louvre",
+        "isprimary":"0"}, {"id":"8318972024", "secret":"c065315906", "server":"8075",
+        "farm":9, "title":"Mus\u00e9e du Louvre", "isprimary":"0"}, {"id":"8317914047",
+        "secret":"afebce8291", "server":"8353", "farm":9, "title":"Mus\u00e9e du Louvre",
+        "isprimary":"0"}, {"id":"8317913769", "secret":"df65484bbf", "server":"8212",
+        "farm":9, "title":"Eiffel Tower", "isprimary":"0"}, {"id":"8317913551", "secret":"08da94c65d",
+        "server":"8504", "farm":9, "title":"La Fontaine du Palmier", "isprimary":"0"},
+        {"id":"8317913297", "secret":"a8b7de8c16", "server":"8358", "farm":9, "title":"Arc
+        de Triomphe", "isprimary":"0"}, {"id":"8317913027", "secret":"763e732630",
+        "server":"8499", "farm":9, "title":"Arc de Triomphe", "isprimary":"0"}, {"id":"8318970578",
+        "secret":"c50215a334", "server":"8218", "farm":9, "title":"Paris", "isprimary":"0"},
+        {"id":"8317912585", "secret":"a4b5b3469a", "server":"8083", "farm":9, "title":"Eiffel
+        Tower", "isprimary":"0"}, {"id":"8317912343", "secret":"c93152ca8d", "server":"8222",
+        "farm":9, "title":"Mus\u00e9e de l''Arm\u00e9e", "isprimary":"0"}, {"id":"8317912099",
+        "secret":"22b52e8d35", "server":"8363", "farm":9, "title":"Mus\u00e9e de l''Arm\u00e9e",
+        "isprimary":"0"}, {"id":"8318969664", "secret":"153371a19b", "server":"8491",
+        "farm":9, "title":"Mus\u00e9e de l''Arm\u00e9e", "isprimary":"0"}, {"id":"8317911683",
+        "secret":"d512373239", "server":"8084", "farm":9, "title":"Pont Alexandre
+        III", "isprimary":"0"}, {"id":"8317911437", "secret":"8be1e7efd3", "server":"8361",
+        "farm":9, "title":"Grand Palais", "isprimary":"0"}, {"id":"8318968876", "secret":"26d5bd1878",
+        "server":"8503", "farm":9, "title":"L''\u00e9glise de la Madeleine", "isprimary":"0"},
+        {"id":"8318969046", "secret":"56251fd609", "server":"8494", "farm":9, "title":"Obelisk
+        of Luxor", "isprimary":"0"}, {"id":"8317910789", "secret":"467d54a99f", "server":"8216",
+        "farm":9, "title":"Palais Garnier", "isprimary":"0"}, {"id":"8317910509",
+        "secret":"1216246904", "server":"8358", "farm":9, "title":"Mus\u00e9e du Louvre",
+        "isprimary":"0"}, {"id":"8317910267", "secret":"b819e196fb", "server":"8491",
+        "farm":9, "title":"Arc de Triomphe du Carrousel", "isprimary":"0"}, {"id":"8317910013",
+        "secret":"eec4c96afe", "server":"8364", "farm":9, "title":"Mus\u00e9e du Louvre",
+        "isprimary":"0"}, {"id":"8318967686", "secret":"624429e46d", "server":"8078",
+        "farm":9, "title":"Mus\u00e9e du Louvre", "isprimary":"0"}, {"id":"8318967488",
+        "secret":"0cdab1c40e", "server":"8500", "farm":9, "title":"H\u00f4tel de Ville
+        of Paris", "isprimary":"0"}, {"id":"8317909259", "secret":"abb257d191", "server":"8361",
+        "farm":9, "title":"Streets of Paris", "isprimary":"0"}, {"id":"8317908947",
+        "secret":"5e26048412", "server":"8496", "farm":9, "title":"Notre Dame", "isprimary":"0"},
+        {"id":"8318966772", "secret":"3e25079d52", "server":"8214", "farm":9, "title":"Notre
+        Dame", "isprimary":"0"}, {"id":"8318966518", "secret":"a0666c4332", "server":"8360",
+        "farm":9, "title":"Notre Dame", "isprimary":"0"}, {"id":"8318966322", "secret":"695cca1b95",
+        "server":"8215", "farm":9, "title":"H\u00f4tel de Ville of Paris", "isprimary":"0"}],
+        "page":1, "per_page":500, "perpage":500, "pages":1, "total":"28", "title":"Paris"},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Sun, 13 Apr 2014 00:07:02 GMT
+recorded_with: VCR 2.9.0

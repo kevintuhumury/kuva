@@ -12,4 +12,5 @@ end
 require "kuva/engine"
 require "kuva/elements/url_info"
 require "kuva/elements/photo"
+require "kuva/elements/photoset"
 require "kuva/authorizer"
