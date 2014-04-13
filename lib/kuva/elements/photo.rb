@@ -17,7 +17,9 @@ module Kuva
       end
 
       def self.find(id)
-        new flickr.photos.getInfo(photo_id: id)
+        Rails.cache.fetch "photo-#{id}", expires_in: Kuva.cache_expiration do
+          new flickr.photos.getInfo(photo_id: id)
+        end
       end
 
       def url

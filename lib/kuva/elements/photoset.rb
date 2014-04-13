@@ -21,7 +21,9 @@ module Kuva
       end
 
       def self.find(id)
-        new flickr.photosets.getInfo(photoset_id: id)
+        Rails.cache.fetch "photoset-#{id}", expires_in: Kuva.cache_expiration do
+          new flickr.photosets.getInfo(photoset_id: id)
+        end
       end
 
       def with_photos
@@ -37,7 +39,9 @@ module Kuva
       private
 
       def photos
-        flickr.photosets.getPhotos(photoset_id: id).photo
+        Rails.cache.fetch "photos-from-photoset-#{id}-#{updated_at}", expires_in: Kuva.cache_expiration do
+          flickr.photosets.getPhotos(photoset_id: id).photo
+        end
       end
 
     end

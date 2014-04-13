@@ -7,15 +7,17 @@ module Kuva
       end
 
       def photosets
-        @photosets ||= sets.each_with_object([]) do |photoset, collection|
+        @photosets ||= cached.each_with_object([]) do |photoset, collection|
           collection << Kuva::Elements::Photoset.find(photoset.id)
         end
       end
 
       private
 
-      def sets
-        flickr.photosets.getList
+      def cached
+        Rails.cache.fetch "photosets", expires_in: Kuva.cache_expiration do
+          flickr.photosets.getList
+        end
       end
 
     end
