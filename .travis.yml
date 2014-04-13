@@ -3,3 +3,9 @@ script: rake
 rvm:
   - 2.0.0
   - 1.9.3
+env:
+  global:
+  - secure: bnOruf8nDL/RW73YuNdwFsk0Mp0lKc+cu2tYQj95oYluDVaE2HbHXGUsQ0h3xJXBPwZhQTm5eSqdIlAi9WBau8XZ+yAzMFOtF2MhiZYChS7ZoSHBFZMwaL0aWFKC6R50niNHWXhvvg+63hDvMuG+5VWQobeIjac7WWriiSuAvSE=
+  - secure: Rqtp1maxRYXjKZ3yltm4hFsnb21NY8kB76h9CqkShCTrgxQCcEEwvyIMCbO7TZXUKskuV1h9U++3LOs/66a5FtTHDihnhlRbgRVodUcC5y7oIe9A8WJhTVg1R0+vOj5itn7CMu64Ne70dF+OSR1lPi6FcEKK2ktN3YAoQ7wM830=
+  - secure: Xlw44/uFPjcHVj9MULZjMeHzoJWZm5GL3Yd5L6D6jvAGbxh2PtWe4IjQsWcBXzaRAUZ3egieZOFiJMm7f8BCyfXfRhwImONrYpHWkS1AdO1d/9eK+/OaHIYVrFcKZQSuP0PIacEW6+nSoLjug8TbcdfE7BbVgkbx8iXY7Wzh3fw=
+  - secure: dyg7H8qxQGJKQj7gyVaozn66Fy20Pi+7JBc9bssEUDs6UnLZSjhQRtC08hvN6ds+v1qOwmUihJUVWFsW74bTx9ZZJJk9YBaI4n7Dkh+m3+VnX/idUAHiaF7itjbXkHKmenNyyV5yHcjQsM48lF39CJxexjqv6BkBCgItUJcebMo=
