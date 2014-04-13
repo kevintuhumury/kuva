@@ -64,11 +64,11 @@ module Kuva
         end
 
         it "generates an image URL for a default sized (medium) image" do
-          expect(subject.url).to eq "http://farm9.staticflickr.com/8217/8317914535_c7393787f3.jpg"
+          expect(subject.url).to eq "https://farm9.staticflickr.com/8217/8317914535_c7393787f3.jpg"
         end
 
         it "generates an image URL for a n-sized (small 320) image" do
-          expect(subject.url_n).to eq "http://farm9.staticflickr.com/8217/8317914535_c7393787f3_n.jpg"
+          expect(subject.url_n).to eq "https://farm9.staticflickr.com/8217/8317914535_c7393787f3_n.jpg"
         end
       end
     end
