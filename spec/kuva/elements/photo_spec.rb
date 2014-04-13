@@ -3,16 +3,11 @@ require "spec_helper"
 
 module Kuva
   module Elements
-    describe Photo do
-
-      before do
-        FlickRaw.api_key       = Kuva.api_key
-        FlickRaw.shared_secret = Kuva.shared_secret
-      end
+    describe Photo, :vcr do
 
       let(:photo_id) { "8317914535" }
 
-      context "#initialize", :vcr do
+      context "#initialize" do
         subject { described_class.find photo_id }
 
         it "saves a reference to the id" do
@@ -48,7 +43,7 @@ module Kuva
         end
       end
 
-      context ".find", :vcr do
+      context ".find" do
         it "fetches the photo from Flickr specified by id" do
           expect(flickr.photos).to receive(:getInfo).with(photo_id: photo_id).and_call_original
           described_class.find photo_id
@@ -60,7 +55,7 @@ module Kuva
         end
       end
 
-      context "image URLs", :vcr do
+      context "image URLs" do
         subject { described_class.find photo_id }
 
         it "instantiates a new URL info object to create image URLs" do
