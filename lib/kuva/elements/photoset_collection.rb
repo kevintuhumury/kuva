@@ -2,7 +2,7 @@ module Kuva
   module Elements
     class PhotosetCollection
 
-      def self.all
+      def self.retrieve
         new.photosets
       end
 

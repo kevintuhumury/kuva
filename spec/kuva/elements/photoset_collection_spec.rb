@@ -4,8 +4,8 @@ module Kuva
   module Elements
     describe PhotosetCollection, :vcr do
 
-      describe ".all" do
-        subject { described_class.all }
+      describe ".retrieve" do
+        subject { described_class.retrieve }
 
         it "fetches all photosets from Flickr" do
           expect(flickr.photosets).to receive(:getList).and_call_original
