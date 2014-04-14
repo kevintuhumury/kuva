@@ -1,7 +1,7 @@
 Kuva::Engine.routes.draw do
 
   resources :sets, only: [:index, :show] do
-    resources :photo, only: :show
+    resources :photos, only: :show
   end
 
   root to: "sets#index"

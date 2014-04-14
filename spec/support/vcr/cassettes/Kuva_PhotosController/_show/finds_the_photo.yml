@@ -15,8 +15,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
-        oauth_nonce="Frc15aCfPJA9lSOCNrzhN%2B4UNg0eZq3pBOKZ9quvbG0%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397454827", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_nonce="TumgJJVgVQuPNDH59ysrZyt9fYpp36QE1eRVtIDQEK0%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397479207", oauth_token="<KUVA_ACCESS_TOKEN>",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -26,7 +26,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Apr 2014 05:53:48 GMT
+      - Mon, 14 Apr 2014 12:40:07 GMT
       P3p:
       - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
         TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
@@ -34,18 +34,18 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www30.flickr.bf1.yahoo.com
+      - www64.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Content-Length:
-      - '1153'
+      - '1154'
       Content-Type:
       - application/json
       Age:
-      - '3'
+      - '0'
       Via:
-      - http/1.1 fts108.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r16.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      - http/1.1 fts120.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r21.ycpi.dee.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
       Server:
       - ATS
       Connection:
@@ -62,7 +62,7 @@ http_interactions:
         f\/1.8 or Tokina 12-24mm f\/4."}, "visibility":{"ispublic":1, "isfriend":0,
         "isfamily":0}, "dates":{"posted":"1356715395", "taken":"2012-12-02 16:03:55",
         "takengranularity":"0", "lastupdate":"1356715869"}, "permissions":{"permcomment":3,
-        "permaddmeta":2}, "views":"290", "editability":{"cancomment":1, "canaddmeta":1},
+        "permaddmeta":2}, "views":"291", "editability":{"cancomment":1, "canaddmeta":1},
         "publiceditability":{"cancomment":1, "canaddmeta":0}, "usage":{"candownload":1,
         "canblog":1, "canprint":1, "canshare":1}, "comments":{"_content":"0"}, "notes":{"note":[]},
         "people":{"haspeople":0}, "tags":{"tag":[{"id":"8513429-8317914535-484", "author":"8558751@N06",
@@ -91,5 +91,67 @@ http_interactions:
         "isfamily":0}, "urls":{"url":[{"type":"photopage", "_content":"https:\/\/www.flickr.com\/photos\/kevintuhumury\/8317914535\/"}]},
         "media":"photo"}, "stat":"ok"}'
     http_version: 
-  recorded_at: Mon, 14 Apr 2014 05:53:48 GMT
+  recorded_at: Mon, 14 Apr 2014 12:40:07 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157632367381040&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="HYhNQn2lvVow%2FYLUe1vv7TN27L51sWpOI98fGR7Ls08%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397484496", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 14:08:16 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www93.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '364'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts111.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157632367381040", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"8318972536", "secret":"eda82f692f", "server":"8499", "farm":9,
+        "photos":28, "count_views":"31", "count_comments":"0", "count_photos":"28",
+        "count_videos":0, "title":{"_content":"Paris"}, "description":{"_content":"These
+        shots were taken in Paris, France in December 2012. Most of them are taken
+        with my Nikon D80 and Nikkor 50mm f\/1.8 or Tokina 12-24mm f\/4."}, "can_comment":1,
+        "date_create":"1356715289", "date_update":"1356717162", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 14:08:16 GMT
 recorded_with: VCR 2.9.0
