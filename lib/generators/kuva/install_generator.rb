@@ -11,6 +11,10 @@ module Kuva
         copy_file "kuva.rb", "config/initializers/kuva.rb"
       end
 
+      def copy_locale
+        copy_file "../../../../config/locales/frontend.yml", "config/locales/kuva.en.yml"
+      end
+
     end
   end
 end

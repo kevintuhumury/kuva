@@ -7,6 +7,7 @@ module Kuva
       destination File.expand_path("../../../../tmp", __FILE__)
 
       let(:initializer) { file("config/initializers/kuva.rb") }
+      let(:locale)      { file("config/locales/kuva.en.yml") }
 
       before do
         prepare_destination
@@ -15,6 +16,10 @@ module Kuva
 
       it "generates config/initializers/kuva.rb" do
         expect(initializer).to exist
+      end
+
+      it "generates config/locales/kuva.en.yml" do
+        expect(locale).to exist
       end
 
       after do
