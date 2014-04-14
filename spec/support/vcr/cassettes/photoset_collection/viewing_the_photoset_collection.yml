@@ -1,0 +1,2761 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: method=flickr.photosets.getList&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="XMmcWqRo57uum%2B5PTgqIBgPkJTT4reheK380DgvzllI%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474566", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:47 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www33.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '4368'
+      Content-Type:
+      - application/json
+      Age:
+      - '1'
+      Via:
+      - http/1.1 fts122.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photosets":{"cancreate":1, "page":1, "pages":1, "perpage":40, "total":40,
+        "photoset":[{"id":"72157632367381040", "primary":"8318972536", "secret":"eda82f692f",
+        "server":"8499", "farm":9, "photos":"28", "videos":0, "title":{"_content":"Paris"},
+        "description":{"_content":"These shots were taken in Paris, France in December
+        2012. Most of them are taken with my Nikon D80 and Nikkor 50mm f\/1.8 or Tokina
+        12-24mm f\/4."}, "needs_interstitial":0, "visibility_can_see_set":1, "count_views":"31",
+        "count_comments":"0", "can_comment":1, "date_create":"1356715289", "date_update":"1356717162"},
+        {"id":"72157632303248759", "primary":"8294626229", "secret":"7b8aaeab2b",
+        "server":"8081", "farm":9, "photos":"69", "videos":0, "title":{"_content":"Bali"},
+        "description":{"_content":"These shots were taken on Bali in May 2012. Most
+        of them are taken with my Nikon D80 and Nikkor 50mm f\/1.8 or Tokina 12-24mm
+        f\/4."}, "needs_interstitial":0, "visibility_can_see_set":1, "count_views":"21",
+        "count_comments":"0", "can_comment":1, "date_create":"1356131625", "date_update":"1356189559"},
+        {"id":"72157629017578067", "primary":"6757041485", "secret":"643ba72439",
+        "server":"7163", "farm":8, "photos":"69", "videos":0, "title":{"_content":"Aruba"},
+        "description":{"_content":"These shots were taken on Aruba (One Happy Island)
+        in March 2011. Most of them are taken with my Nikon D80 and Tokina 12-24mm
+        f\/4.\n\nObviously it''s Aruba from a different point of view."}, "needs_interstitial":0,
+        "visibility_can_see_set":1, "count_views":"73", "count_comments":"4", "can_comment":1,
+        "date_create":"1327442512", "date_update":"1356165010"}, {"id":"72157628378160739",
+        "primary":"6495153913", "secret":"1ba1b324ef", "server":"7145", "farm":8,
+        "photos":"51", "videos":0, "title":{"_content":"Carnaval di Aruba ''11"},
+        "description":{"_content":"These shots were taken in and around Oranjestad,
+        Aruba during the Carnival in March 2011."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"89", "count_comments":"0", "can_comment":1, "date_create":"1323640679",
+        "date_update":"1356165010"}, {"id":"72157625433863013", "primary":"5245419190",
+        "secret":"54cdd111fd", "server":"5282", "farm":6, "photos":"10", "videos":0,
+        "title":{"_content":"Zoom Experience ''10"}, "description":{"_content":"These
+        shots were taken at the Zoom Experience 2010 in the Jaarbeurs, Utrecht. They
+        all feature the model Suraya."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"123", "count_comments":"0", "can_comment":1, "date_create":"1291854812",
+        "date_update":"1356165009"}, {"id":"72157625523500610", "primary":"5230378378",
+        "secret":"fecddda258", "server":"5242", "farm":6, "photos":"30", "videos":0,
+        "title":{"_content":"The Hague"}, "description":{"_content":"These shots were
+        taken on a sunny afternoon in the centre of The Hague, The Netherlands. Most
+        of them have been taken in or around the Binnenhof, where the Dutch parliament
+        resides."}, "needs_interstitial":0, "visibility_can_see_set":1, "count_views":"47",
+        "count_comments":"0", "can_comment":1, "date_create":"1291422677", "date_update":"1356165010"},
+        {"id":"72157624624572356", "primary":"4847033367", "secret":"f455849b72",
+        "server":"4146", "farm":5, "photos":"57", "videos":0, "title":{"_content":"Zomer
+        Carnaval ''10"}, "description":{"_content":"These shots were taken at the
+        Ortel Zomer Carnaval 2010 in Rotterdam. Most of them were taken with my Nikon
+        50 mm f\/1.8D at Leuvehaven and some of them were taken with my Nikon 70-300mm
+        f4.5-5.6."}, "needs_interstitial":0, "visibility_can_see_set":1, "count_views":"266",
+        "count_comments":"0", "can_comment":1, "date_create":"1280613448", "date_update":"1356165011"},
+        {"id":"72157623902001333", "primary":"4593271974", "secret":"d2482de61a",
+        "server":"3544", "farm":4, "photos":"47", "videos":0, "title":{"_content":"5
+        Mei Festival"}, "description":{"_content":"A festival in The Hague on May
+        5th, which is Liberation Day in The Netherlands. \n\nIn this set you''ll be
+        able to view the following artists: Winne, Jurk and Mischu Laikah."}, "needs_interstitial":0,
+        "visibility_can_see_set":1, "count_views":"71", "count_comments":"0", "can_comment":1,
+        "date_create":"1273437402", "date_update":"1356165010"}, {"id":"72157623700320221",
+        "primary":"4507629959", "secret":"42bce98099", "server":"2726", "farm":3,
+        "photos":"23", "videos":0, "title":{"_content":"Val Thorens"}, "description":{"_content":"Most
+        of these shots were taken in Val Thorens, France with a Nikon D80."}, "needs_interstitial":0,
+        "visibility_can_see_set":1, "count_views":"89", "count_comments":"0", "can_comment":1,
+        "date_create":"1270915823", "date_update":"1356165010"}, {"id":"72157622678558767",
+        "primary":"4103218587", "secret":"4c8bdd07b5", "server":"2631", "farm":3,
+        "photos":"40", "videos":0, "title":{"_content":"Zoom Experience ''09"}, "description":{"_content":"Zoom
+        Experience is a Dutch digital photography event hosted in the ''Jaarbeurs''
+        in Utrecht by the Zoom.nl magazine."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"153", "count_comments":"0", "can_comment":1, "date_create":"1258229906",
+        "date_update":"1356165010"}, {"id":"72157622216400117", "primary":"3910073517",
+        "secret":"2ee8ba3d74", "server":"2631", "farm":3, "photos":"152", "videos":0,
+        "title":{"_content":"Rome"}, "description":{"_content":"Most of these shots
+        were taken in Rome, Italy with my Nikkor 50 mm f\/1.8. The others were taken
+        with the Nikkor 55-200 mm f\/4.0-5.6."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"108", "count_comments":"0", "can_comment":1, "date_create":"1252704238",
+        "date_update":"1356165011"}, {"id":"72157622251601466", "primary":"3889860224",
+        "secret":"9333bbc160", "server":"2435", "farm":3, "photos":"81", "videos":0,
+        "title":{"_content":"Rome (UWA)"}, "description":{"_content":"These shots
+        were taken with my Nikon D80 and the Tokina 12-24mm f\/4, an Ultra Wide Angle
+        lens, in Rome, Italy."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"234", "count_comments":"0", "can_comment":1, "date_create":"1252152755",
+        "date_update":"1356165011"}, {"id":"72157622042947321", "primary":"3865054146",
+        "secret":"e5d907bd9a", "server":"2637", "farm":3, "photos":"27", "videos":0,
+        "title":{"_content":"Madurodam At Night"}, "description":{"_content":"These
+        shots were taken during the evening at Madurodam, Scheveningen. "}, "needs_interstitial":0,
+        "visibility_can_see_set":1, "count_views":"93", "count_comments":"0", "can_comment":1,
+        "date_create":"1251468756", "date_update":"1356165010"}, {"id":"72157622067739660",
+        "primary":"3843992302", "secret":"e0fc5eb971", "server":"2608", "farm":3,
+        "photos":"76", "videos":0, "title":{"_content":"Streetmasters ''09"}, "description":{"_content":"Streetmasters
+        is a streetsportevent with battles for inline skaters, skateboarders, BMX-ers,
+        breakdancers, streetdancers and streetsoccer players. As of the 2009 edition
+        there also is a freerunners dicipline."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"137", "count_comments":"0", "can_comment":1, "date_create":"1250543322",
+        "date_update":"1356165011"}, {"id":"72157621986269708", "primary":"3802687475",
+        "secret":"7007c87d22", "server":"3493", "farm":4, "photos":"21", "videos":0,
+        "title":{"_content":"Fit For Free Dance Parade"}, "description":{"_content":"The
+        Fit For Free Dance Parade is a parade of trucks with DJ''s and dancers on
+        them, which goes straight through Rotterdam."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"97", "count_comments":"0", "can_comment":1, "date_create":"1249803502",
+        "date_update":"1356165009"}, {"id":"72157621709918913", "primary":"3757528316",
+        "secret":"a20bd0c139", "server":"2610", "farm":3, "photos":"58", "videos":0,
+        "title":{"_content":"Zomer Carnaval ''09"}, "description":{"_content":"These
+        shots were taken at the Ortel Zomer Carnaval 2009 in Rotterdam. They were
+        al taken with my Nikon 50 mm f\/1.8D at the Coolsingel."}, "needs_interstitial":0,
+        "visibility_can_see_set":1, "count_views":"290", "count_comments":"0", "can_comment":1,
+        "date_create":"1248592969", "date_update":"1356165010"}, {"id":"72157621226409953",
+        "primary":"3713875609", "secret":"4b441bf691", "server":"3474", "farm":4,
+        "photos":"15", "videos":0, "title":{"_content":"North Sea Round Town"}, "description":{"_content":"North
+        Sea Round Town is the warming-up of the North Sea Jazz Festival in Rotterdam."},
+        "needs_interstitial":0, "visibility_can_see_set":1, "count_views":"124", "count_comments":"0",
+        "can_comment":1, "date_create":"1247436891", "date_update":"1356165010"},
+        {"id":"72157620266565933", "primary":"3654106253", "secret":"3b5eca01e6",
+        "server":"3394", "farm":4, "photos":"186", "videos":0, "title":{"_content":"New
+        York City"}, "description":{"_content":"These shots were taken with my Nikon
+        D80 and the Nikkor 50mm f\/1.8D in New York City, USA. Some of the shots were
+        taken with the Nikkor 55-200mm f\/4-5.6."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"491", "count_comments":"0", "can_comment":1, "date_create":"1245782076",
+        "date_update":"1356165013"}, {"id":"72157619874753455", "primary":"3643159571",
+        "secret":"f7623d5eaf", "server":"3570", "farm":4, "photos":"133", "videos":0,
+        "title":{"_content":"New York City (UWA)"}, "description":{"_content":"These
+        shots were taken with my Nikon D80 and the Tokina 12-24mm f\/4, an Ultra Wide
+        Angle lens, in New York City, USA."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"401", "count_comments":"0", "can_comment":1, "date_create":"1245423559",
+        "date_update":"1356165011"}, {"id":"72157618789715578", "primary":"3563736117",
+        "secret":"482e7889db", "server":"3656", "farm":4, "photos":"13", "videos":0,
+        "title":{"_content":"Antwerp"}, "description":{"_content":"Shots I''ve taken
+        in Antwerp."}, "needs_interstitial":0, "visibility_can_see_set":1, "count_views":"47",
+        "count_comments":"0", "can_comment":1, "date_create":"1243286961", "date_update":"1356165009"},
+        {"id":"72157617813232989", "primary":"3515445170", "secret":"468e074632",
+        "server":"3356", "farm":4, "photos":"3", "videos":0, "title":{"_content":"Night
+        At The Docks"}, "description":{"_content":"These shots were taken at the docks
+        of Rotterdam. We were standing near the Maas."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"31", "count_comments":"0", "can_comment":1, "date_create":"1241870453",
+        "date_update":"1356165009"}, {"id":"72157611834597247", "primary":"3149804427",
+        "secret":"0b95ff03f7", "server":"3101", "farm":4, "photos":"20", "videos":0,
+        "title":{"_content":"Red Bull Knock Out"}, "description":{"_content":"The
+        Red Bull Knockout took place in Scheveningen, the Netherlands on November
+        16th. These shots were taken there."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"103", "count_comments":"0", "can_comment":1, "date_create":"1230641381",
+        "date_update":"1356165009"}, {"id":"72157608768338052", "primary":"3070765188",
+        "secret":"28b8fa5d38", "server":"3201", "farm":4, "photos":"35", "videos":0,
+        "title":{"_content":"Zoom Experience ''08"}, "description":{"_content":"Zoom
+        Experience is a Dutch digital photography event hosted in the ''Jaarbeurs''
+        in Utrecht by the Zoom.nl magazine."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"383", "count_comments":"0", "can_comment":1, "date_create":"1226182293",
+        "date_update":"1356165010"}, {"id":"72157607994521912", "primary":"2938539715",
+        "secret":"683e0092c3", "server":"3025", "farm":4, "photos":"12", "videos":0,
+        "title":{"_content":"100% Tuning"}, "description":{"_content":"100% Tuning
+        is the largest indoor tuning event in Holland. This year was the 5th edition
+        of 100% Tuning in Ahoy Rotterdam."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"1169", "count_comments":"0", "can_comment":1, "date_create":"1223927875",
+        "date_update":"1356165009"}, {"id":"72157607752895562", "primary":"2914332291",
+        "secret":"fd4400f0dd", "server":"3248", "farm":4, "photos":"17", "videos":0,
+        "title":{"_content":"Training Feijenoord"}, "description":{"_content":"These
+        photos were taken on a saturday at De Kuip in Rotterdam. The selection of
+        Feijenoord 1 was training there at the moment."}, "needs_interstitial":0,
+        "visibility_can_see_set":1, "count_views":"101", "count_comments":"0", "can_comment":1,
+        "date_create":"1223214961", "date_update":"1356165012"}, {"id":"72157607757878689",
+        "primary":"2914105201", "secret":"ae046eb2ea", "server":"3090", "farm":4,
+        "photos":"15", "videos":0, "title":{"_content":"Rotterdam Road Races"}, "description":{"_content":"The
+        Rotterdam Road Races is an event with several races like the Fortis 1\/2 Marathon
+        Rotterdam, AD 10 Km Loop and Rotterdam on Wheels."}, "needs_interstitial":0,
+        "visibility_can_see_set":1, "count_views":"41", "count_comments":"0", "can_comment":1,
+        "date_create":"1223208582", "date_update":"1356165012"}, {"id":"72157607755852863",
+        "primary":"2914800312", "secret":"eac896c089", "server":"3197", "farm":4,
+        "photos":"19", "videos":0, "title":{"_content":"Streetmasters ''08"}, "description":{"_content":"Streetmasters
+        is a streetsportevent with battles for inline skaters, skateboarders, BMX-ers,
+        breakdancers and streetdancers. This was the finale at Westblaak in Rotterdam."},
+        "needs_interstitial":0, "visibility_can_see_set":1, "count_views":"61", "count_comments":"0",
+        "can_comment":1, "date_create":"1223203353", "date_update":"1356165012"},
+        {"id":"72157607733513100", "primary":"2912489161", "secret":"d2fb34f716",
+        "server":"3105", "farm":4, "photos":"24", "videos":0, "title":{"_content":"Diergaarde
+        Blijdorp"}, "description":{"_content":"Rotterdam Zoo: Diergaarde Blijdorp"},
+        "needs_interstitial":0, "visibility_can_see_set":1, "count_views":"67", "count_comments":"0",
+        "can_comment":1, "date_create":"1223156815", "date_update":"1356165012"},
+        {"id":"72157607758936165", "primary":"2914184769", "secret":"26ca769e6a",
+        "server":"3100", "farm":4, "photos":"23", "videos":0, "title":{"_content":"I
+        (heart) Threadless"}, "description":{"_content":"Photos from our so-called
+        &quot;I (heart) Threadless&quot; photoshoot for our profile on the Threadless
+        website. It took place under the Brienenoordbrug in Rotterdam."}, "needs_interstitial":0,
+        "visibility_can_see_set":1, "count_views":"65", "count_comments":"0", "can_comment":1,
+        "date_create":"1223211099", "date_update":"1356165013"}, {"id":"72157604876037835",
+        "primary":"3514636763", "secret":"f13062d9e4", "server":"3317", "farm":4,
+        "photos":"16", "videos":0, "title":{"_content":"Me, Myself & I"}, "description":{"_content":"The
+        title of this set says it all. These are obviously selfportrets or images
+        of me made by other people."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"330", "count_comments":"0", "can_comment":1, "date_create":"1209896547",
+        "date_update":"1356165012"}, {"id":"72157613432665353", "primary":"3831523902",
+        "secret":"9cf20046e1", "server":"3534", "farm":4, "photos":"33", "videos":0,
+        "title":{"_content":"Portraits"}, "description":{"_content":"Portraits of
+        people."}, "needs_interstitial":0, "visibility_can_see_set":1, "count_views":"64",
+        "count_comments":"0", "can_comment":1, "date_create":"1233996281", "date_update":"1356165012"},
+        {"id":"72157607956377672", "primary":"2933987351", "secret":"22ce24ddf9",
+        "server":"3179", "farm":4, "photos":"21", "videos":0, "title":{"_content":"Egypt"},
+        "description":{"_content":"In August 2008 I went to Sharm El-Sheikh, Egypt
+        with my brother. We''ve also visited Cairo while we were there. All of these
+        were taken with my Fujifilm FinePix s9600 (which I''ve sold)."}, "needs_interstitial":0,
+        "visibility_can_see_set":1, "count_views":"86", "count_comments":"0", "can_comment":1,
+        "date_create":"1223824830", "date_update":"1356165012"}, {"id":"72157607747813484",
+        "primary":"2914660920", "secret":"577a301104", "server":"3190", "farm":4,
+        "photos":"11", "videos":0, "title":{"_content":"Wereld havendagen"}, "description":{"_content":"The
+        world harbor day is a large event in Rotterdam. It is meant to show what takes
+        place in Europe''s biggest port."}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"21", "count_comments":"0", "can_comment":1, "date_create":"1223197948",
+        "date_update":"1356165012"}, {"id":"72157608065768431", "primary":"3260304504",
+        "secret":"b566f0c1fa", "server":"3403", "farm":4, "photos":"8", "videos":0,
+        "title":{"_content":"Gadgets & Gear"}, "description":{"_content":"This set
+        contains photos from my gadgets, gear and other shots that fit this set."},
+        "needs_interstitial":0, "visibility_can_see_set":1, "count_views":"315", "count_comments":"0",
+        "can_comment":1, "date_create":"1224100790", "date_update":"1356165012"},
+        {"id":"72157602136210676", "primary":"2463323643", "secret":"49c99715da",
+        "server":"2393", "farm":3, "photos":"9", "videos":0, "title":{"_content":"Cars"},
+        "description":{"_content":"The photos in this set are of my cars. The first
+        are from my Honda Civic 1.5 LSi ''93, which I''ve sold in the meanwhile. The
+        other photos are from my BMW 316i Compact from ''98, which I currently own."},
+        "needs_interstitial":0, "visibility_can_see_set":1, "count_views":"154", "count_comments":"0",
+        "can_comment":1, "date_create":"1190657188", "date_update":"1356165012"},
+        {"id":"72157609118757238", "primary":"2979327772", "secret":"1709ca8191",
+        "server":"3048", "farm":4, "photos":"101", "videos":0, "title":{"_content":"Bokeh"},
+        "description":{"_content":"Photographs that I''ve taken with out-of-focus
+        areas in it produced by a shallow depth of field."}, "needs_interstitial":0,
+        "visibility_can_see_set":1, "count_views":"79", "count_comments":"0", "can_comment":1,
+        "date_create":"1226764945", "date_update":"1356165012"}, {"id":"72157608164792364",
+        "primary":"2955114833", "secret":"7322751b77", "server":"3029", "farm":4,
+        "photos":"26", "videos":0, "title":{"_content":"Selective Colors"}, "description":{"_content":"This
+        set contains photos that are mainly black and white with a selective color."},
+        "needs_interstitial":0, "visibility_can_see_set":1, "count_views":"46", "count_comments":"0",
+        "can_comment":1, "date_create":"1224414579", "date_update":"1356165012"},
+        {"id":"72157608177901148", "primary":"3643167761", "secret":"32da16b737",
+        "server":"2465", "farm":3, "photos":"208", "videos":0, "title":{"_content":"Black
+        & White"}, "description":{"_content":"The title of this set is pretty self
+        explanatory, but just to make it more clear... it contains black and white
+        photographs."}, "needs_interstitial":0, "visibility_can_see_set":1, "count_views":"43",
+        "count_comments":"0", "can_comment":1, "date_create":"1224448207", "date_update":"1356165013"},
+        {"id":"72157609130124623", "primary":"3031746973", "secret":"179aa08c2e",
+        "server":"3294", "farm":4, "photos":"8", "videos":0, "title":{"_content":"Product
+        Photography"}, "description":{"_content":""}, "needs_interstitial":0, "visibility_can_see_set":1,
+        "count_views":"35", "count_comments":"0", "can_comment":1, "date_create":"1226763941",
+        "date_update":"1356165012"}, {"id":"72157600303479345", "primary":"2464410072",
+        "secret":"99a2e64e3e", "server":"2272", "farm":3, "photos":"7", "videos":0,
+        "title":{"_content":"Nature"}, "description":{"_content":"Flora, fauna and
+        landscapes."}, "needs_interstitial":0, "visibility_can_see_set":1, "count_views":"54",
+        "count_comments":"0", "can_comment":1, "date_create":"1180873266", "date_update":"1356165017"}]},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:47 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157632367381040&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="jI44FcGFg0FDKP%2BgW%2Bylq5gBlxYgm6cAiENOLJiZFRc%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474567", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:47 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www187.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '364'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts123.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157632367381040", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"8318972536", "secret":"eda82f692f", "server":"8499", "farm":9,
+        "photos":28, "count_views":"31", "count_comments":"0", "count_photos":"28",
+        "count_videos":0, "title":{"_content":"Paris"}, "description":{"_content":"These
+        shots were taken in Paris, France in December 2012. Most of them are taken
+        with my Nikon D80 and Nikkor 50mm f\/1.8 or Tokina 12-24mm f\/4."}, "can_comment":1,
+        "date_create":"1356715289", "date_update":"1356717162", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:47 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157632303248759&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="tr8U9hhbCqW6LQcjtzwnApiUYl133%2FAFgwMNvKNtV6g%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474567", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:47 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www150.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '354'
+      Content-Type:
+      - application/json
+      Age:
+      - '2'
+      Via:
+      - http/1.1 fts109.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157632303248759", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"8294626229", "secret":"7b8aaeab2b", "server":"8081", "farm":9,
+        "photos":69, "count_views":"21", "count_comments":"0", "count_photos":"69",
+        "count_videos":0, "title":{"_content":"Bali"}, "description":{"_content":"These
+        shots were taken on Bali in May 2012. Most of them are taken with my Nikon
+        D80 and Nikkor 50mm f\/1.8 or Tokina 12-24mm f\/4."}, "can_comment":1, "date_create":"1356131625",
+        "date_update":"1356189559", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:48 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157629017578067&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="xaA%2BU5af6IIDZT8KFXOt2eWIbqGtGPr%2B%2Bw55WH3AJkA%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474568", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:48 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www211.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '405'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts118.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157629017578067", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"6757041485", "secret":"643ba72439", "server":"7163", "farm":8,
+        "photos":69, "count_views":"73", "count_comments":"4", "count_photos":"69",
+        "count_videos":0, "title":{"_content":"Aruba"}, "description":{"_content":"These
+        shots were taken on Aruba (One Happy Island) in March 2011. Most of them are
+        taken with my Nikon D80 and Tokina 12-24mm f\/4.\n\nObviously it''s Aruba
+        from a different point of view."}, "can_comment":1, "date_create":"1327442512",
+        "date_update":"1356165010", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:48 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157628378160739&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="WCvCEdRDQozxhDGolb1d8DcEtHaDJ8hpp2t1SvVpUuQ%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474568", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:48 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www53.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '344'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts122.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157628378160739", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"6495153913", "secret":"1ba1b324ef", "server":"7145", "farm":8,
+        "photos":51, "count_views":"89", "count_comments":"0", "count_photos":"51",
+        "count_videos":0, "title":{"_content":"Carnaval di Aruba ''11"}, "description":{"_content":"These
+        shots were taken in and around Oranjestad, Aruba during the Carnival in March
+        2011."}, "can_comment":1, "date_create":"1323640679", "date_update":"1356165010",
+        "coverphoto_server":"0", "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:48 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157625433863013&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="AfcxT%2FfTHtWB9KRYNF9bTWXlqC%2By27IlaFN%2BPc%2F27E8%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474568", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:48 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www31.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '356'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts107.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157625433863013", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"5245419190", "secret":"54cdd111fd", "server":"5282", "farm":6,
+        "photos":10, "count_views":"123", "count_comments":"0", "count_photos":"10",
+        "count_videos":0, "title":{"_content":"Zoom Experience ''10"}, "description":{"_content":"These
+        shots were taken at the Zoom Experience 2010 in the Jaarbeurs, Utrecht. They
+        all feature the model Suraya."}, "can_comment":1, "date_create":"1291854812",
+        "date_update":"1356165009", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:48 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157625523500610&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="Gfav6nBvsdzbt3owb2Zw8JCXiO604XCd2pFV4vJht24%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474568", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:49 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www2.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '382'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts112.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157625523500610", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"5230378378", "secret":"fecddda258", "server":"5242", "farm":6,
+        "photos":30, "count_views":"47", "count_comments":"0", "count_photos":"30",
+        "count_videos":0, "title":{"_content":"The Hague"}, "description":{"_content":"These
+        shots were taken on a sunny afternoon in the centre of The Hague, The Netherlands.
+        Most of them have been taken in or around the Binnenhof, where the Dutch parliament
+        resides."}, "can_comment":1, "date_create":"1291422677", "date_update":"1356165010",
+        "coverphoto_server":"0", "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:49 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157624624572356&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="DL%2BDhinF15Ruba0dkVspedjDMhlbufyfo2krbVZwhq0%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474569", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:49 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www94.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '392'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts123.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157624624572356", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"4847033367", "secret":"f455849b72", "server":"4146", "farm":5,
+        "photos":57, "count_views":"266", "count_comments":"0", "count_photos":"57",
+        "count_videos":0, "title":{"_content":"Zomer Carnaval ''10"}, "description":{"_content":"These
+        shots were taken at the Ortel Zomer Carnaval 2010 in Rotterdam. Most of them
+        were taken with my Nikon 50 mm f\/1.8D at Leuvehaven and some of them were
+        taken with my Nikon 70-300mm f4.5-5.6."}, "can_comment":1, "date_create":"1280613448",
+        "date_update":"1356165011", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:49 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157623902001333&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="ohyS14H0zeLGZRfKjTJVKkZwhC1rhjJxtR%2FwX311pp4%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474569", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:49 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www151.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '401'
+      Content-Type:
+      - application/json
+      Age:
+      - '3'
+      Via:
+      - http/1.1 fts121.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157623902001333", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"4593271974", "secret":"d2482de61a", "server":"3544", "farm":4,
+        "photos":47, "count_views":"71", "count_comments":"0", "count_photos":"47",
+        "count_videos":0, "title":{"_content":"5 Mei Festival"}, "description":{"_content":"A
+        festival in The Hague on May 5th, which is Liberation Day in The Netherlands.
+        \n\nIn this set you''ll be able to view the following artists: Winne, Jurk
+        and Mischu Laikah."}, "can_comment":1, "date_create":"1273437402", "date_update":"1356165010",
+        "coverphoto_server":"0", "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:50 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157623700320221&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="5%2BOxieh5McT0b5nNjVCRM%2Fnq7NFCX35pt6FGLmFfnbs%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474570", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:50 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www44.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '322'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts124.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157623700320221", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"4507629959", "secret":"42bce98099", "server":"2726", "farm":3,
+        "photos":23, "count_views":"89", "count_comments":"0", "count_photos":"23",
+        "count_videos":0, "title":{"_content":"Val Thorens"}, "description":{"_content":"Most
+        of these shots were taken in Val Thorens, France with a Nikon D80."}, "can_comment":1,
+        "date_create":"1270915823", "date_update":"1356165010", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:50 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157622678558767&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="VS7gmz9lNfa89UbN%2FSLiQuYkXeASgMrEmL8TCgdvqNs%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474570", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:51 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www244.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '353'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts122.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157622678558767", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"4103218587", "secret":"4c8bdd07b5", "server":"2631", "farm":3,
+        "photos":40, "count_views":"153", "count_comments":"0", "count_photos":"40",
+        "count_videos":0, "title":{"_content":"Zoom Experience ''09"}, "description":{"_content":"Zoom
+        Experience is a Dutch digital photography event hosted in the ''Jaarbeurs''
+        in Utrecht by the Zoom.nl magazine."}, "can_comment":1, "date_create":"1258229906",
+        "date_update":"1356165010", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:51 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157622216400117&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="ViPTYYD1LJMZQhnfAz%2BKPtwpk%2Bzok23dQu30b%2BnrrQk%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474571", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:51 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www318.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '354'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts124.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157622216400117", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3910073517", "secret":"2ee8ba3d74", "server":"2631", "farm":3,
+        "photos":152, "count_views":"108", "count_comments":"0", "count_photos":"152",
+        "count_videos":0, "title":{"_content":"Rome"}, "description":{"_content":"Most
+        of these shots were taken in Rome, Italy with my Nikkor 50 mm f\/1.8. The
+        others were taken with the Nikkor 55-200 mm f\/4.0-5.6."}, "can_comment":1,
+        "date_create":"1252704238", "date_update":"1356165011", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:51 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157622251601466&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="I%2FyGhHIcI9YhtdHWwt%2FpiASNUGhDD%2BYtlBzoCDmSW7Q%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474571", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:52 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www97.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '366'
+      Content-Type:
+      - application/json
+      Age:
+      - '2'
+      Via:
+      - http/1.1 fts111.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157622251601466", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3889860224", "secret":"9333bbc160", "server":"2435", "farm":3,
+        "photos":81, "count_views":"234", "count_comments":"0", "count_photos":"81",
+        "count_videos":0, "title":{"_content":"Rome (UWA)"}, "description":{"_content":"These
+        shots were taken with my Nikon D80 and the Tokina 12-24mm f\/4, an Ultra Wide
+        Angle lens, in Rome, Italy."}, "can_comment":1, "date_create":"1252152755",
+        "date_update":"1356165011", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:53 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157622042947321&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="rhLPJrvf2BvjyCJhbmTtmx3MDKXFtkRRdpRrTzGY3ag%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474573", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:53 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www295.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '323'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts105.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157622042947321", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3865054146", "secret":"e5d907bd9a", "server":"2637", "farm":3,
+        "photos":27, "count_views":"93", "count_comments":"0", "count_photos":"27",
+        "count_videos":0, "title":{"_content":"Madurodam At Night"}, "description":{"_content":"These
+        shots were taken during the evening at Madurodam, Scheveningen. "}, "can_comment":1,
+        "date_create":"1251468756", "date_update":"1356165010", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:53 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157622067739660&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="q78c9MyifyHzLon%2FBchdn6gXKFkJ2qAbjG%2FEVhKbIGU%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474573", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:53 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www217.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '397'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts119.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157622067739660", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3843992302", "secret":"e0fc5eb971", "server":"2608", "farm":3,
+        "photos":76, "count_views":"137", "count_comments":"0", "count_photos":"76",
+        "count_videos":0, "title":{"_content":"Streetmasters ''09"}, "description":{"_content":"Streetmasters
+        is a streetsportevent with battles for inline skaters, skateboarders, BMX-ers,
+        breakdancers, streetdancers and streetsoccer players. As of the 2009 edition
+        there also is a freerunners dicipline."}, "can_comment":1, "date_create":"1250543322",
+        "date_update":"1356165011", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:53 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157621986269708&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="gtOpzpXDM3XdwUfYcfC4VAFF75XuejcB1ePZ4tb4z%2Fg%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474573", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:53 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www273.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '361'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts109.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157621986269708", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3802687475", "secret":"7007c87d22", "server":"3493", "farm":4,
+        "photos":21, "count_views":"97", "count_comments":"0", "count_photos":"21",
+        "count_videos":0, "title":{"_content":"Fit For Free Dance Parade"}, "description":{"_content":"The
+        Fit For Free Dance Parade is a parade of trucks with DJ''s and dancers on
+        them, which goes straight through Rotterdam."}, "can_comment":1, "date_create":"1249803502",
+        "date_update":"1356165009", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:53 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157621709918913&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="IY1lAttGL75wl7TBEdkmjgP%2B6QZYY3HIwRk5B4Qkt9g%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474573", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:54 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www62.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '366'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts103.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157621709918913", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3757528316", "secret":"a20bd0c139", "server":"2610", "farm":3,
+        "photos":58, "count_views":"290", "count_comments":"0", "count_photos":"58",
+        "count_videos":0, "title":{"_content":"Zomer Carnaval ''09"}, "description":{"_content":"These
+        shots were taken at the Ortel Zomer Carnaval 2009 in Rotterdam. They were
+        al taken with my Nikon 50 mm f\/1.8D at the Coolsingel."}, "can_comment":1,
+        "date_create":"1248592969", "date_update":"1356165010", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:54 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157621226409953&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="9KMIoEstwKigCfQYFkZhdYd0%2FsRI%2FLshP5jOH39aMwU%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474574", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:54 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www12.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '326'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts104.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157621226409953", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3713875609", "secret":"4b441bf691", "server":"3474", "farm":4,
+        "photos":15, "count_views":"124", "count_comments":"0", "count_photos":"15",
+        "count_videos":0, "title":{"_content":"North Sea Round Town"}, "description":{"_content":"North
+        Sea Round Town is the warming-up of the North Sea Jazz Festival in Rotterdam."},
+        "can_comment":1, "date_create":"1247436891", "date_update":"1356165010", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:54 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157620266565933&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="M1eJsACrFlc%2B%2FhgtZWhA2CBGvQK9MRE4JD%2BsWEmoIew%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474574", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:54 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www227.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '368'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts104.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157620266565933", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3654106253", "secret":"3b5eca01e6", "server":"3394", "farm":4,
+        "photos":186, "count_views":"491", "count_comments":"0", "count_photos":"186",
+        "count_videos":0, "title":{"_content":"New York City"}, "description":{"_content":"These
+        shots were taken with my Nikon D80 and the Nikkor 50mm f\/1.8D in New York
+        City, USA. Some of the shots were taken with the Nikkor 55-200mm f\/4-5.6."},
+        "can_comment":1, "date_create":"1245782076", "date_update":"1356165013", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:54 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157619874753455&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="9iE7i9oJVqPM9V18LdIMEjNKujpukzeLZp%2BtWqqbhLA%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474574", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:54 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www31.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '372'
+      Content-Type:
+      - application/json
+      Age:
+      - '3'
+      Via:
+      - http/1.1 fts123.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157619874753455", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3643159571", "secret":"f7623d5eaf", "server":"3570", "farm":4,
+        "photos":133, "count_views":"401", "count_comments":"0", "count_photos":"133",
+        "count_videos":0, "title":{"_content":"New York City (UWA)"}, "description":{"_content":"These
+        shots were taken with my Nikon D80 and the Tokina 12-24mm f\/4, an Ultra Wide
+        Angle lens, in New York City, USA."}, "can_comment":1, "date_create":"1245423559",
+        "date_update":"1356165011", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:55 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157618789715578&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="gHbt%2Byqz6gI3f94AxxbhwTxz5oGpz%2FCaDA%2FpgEbnivY%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474575", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:56 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www185.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '295'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts113.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157618789715578", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3563736117", "secret":"482e7889db", "server":"3656", "farm":4,
+        "photos":13, "count_views":"47", "count_comments":"0", "count_photos":"13",
+        "count_videos":0, "title":{"_content":"Antwerp"}, "description":{"_content":"Shots
+        I''ve taken in Antwerp."}, "can_comment":1, "date_create":"1243286961", "date_update":"1356165009",
+        "coverphoto_server":"0", "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:56 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157617813232989&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="D%2BS17FUNI6iINOMYgAwHf4o%2B8EZnlPt9ii%2ByVg2%2FBRc%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474576", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:56 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www24.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '334'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts125.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157617813232989", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3515445170", "secret":"468e074632", "server":"3356", "farm":4,
+        "photos":3, "count_views":"31", "count_comments":"0", "count_photos":"3",
+        "count_videos":0, "title":{"_content":"Night At The Docks"}, "description":{"_content":"These
+        shots were taken at the docks of Rotterdam. We were standing near the Maas."},
+        "can_comment":1, "date_create":"1241870453", "date_update":"1356165009", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:56 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157611834597247&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="iJTcmqUYChIqq14iO1UrxPoEXW%2BGNodXzTtBtqqpDkY%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474576", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:56 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www2.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '356'
+      Content-Type:
+      - application/json
+      Age:
+      - '2'
+      Via:
+      - http/1.1 fts108.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157611834597247", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3149804427", "secret":"0b95ff03f7", "server":"3101", "farm":4,
+        "photos":20, "count_views":"103", "count_comments":"0", "count_photos":"20",
+        "count_videos":0, "title":{"_content":"Red Bull Knock Out"}, "description":{"_content":"The
+        Red Bull Knockout took place in Scheveningen, the Netherlands on November
+        16th. These shots were taken there."}, "can_comment":1, "date_create":"1230641381",
+        "date_update":"1356165009", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:57 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157608768338052&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="eZFGM%2Bc1UxWXMWvmchF79P1V0%2FByr3aJrSeSG%2FlB8sY%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474577", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:57 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www297.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '354'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts109.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157608768338052", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3070765188", "secret":"28b8fa5d38", "server":"3201", "farm":4,
+        "photos":35, "count_views":"383", "count_comments":"0", "count_photos":"35",
+        "count_videos":0, "title":{"_content":"Zoom Experience ''08"}, "description":{"_content":"Zoom
+        Experience is a Dutch digital photography event hosted in the ''Jaarbeurs''
+        in Utrecht by the Zoom.nl magazine."}, "can_comment":1, "date_create":"1226182293",
+        "date_update":"1356165010", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:57 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157607994521912&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="VnKYwCcbYQ64mkOY3EUmVEWG7dZv9uIcg07wcxfHsfU%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474577", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:58 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www113.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '346'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts121.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157607994521912", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"2938539715", "secret":"683e0092c3", "server":"3025", "farm":4,
+        "photos":12, "count_views":"1169", "count_comments":"0", "count_photos":"12",
+        "count_videos":0, "title":{"_content":"100% Tuning"}, "description":{"_content":"100%
+        Tuning is the largest indoor tuning event in Holland. This year was the 5th
+        edition of 100% Tuning in Ahoy Rotterdam."}, "can_comment":1, "date_create":"1223927875",
+        "date_update":"1356165009", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:58 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157607752895562&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="QobSq9OQf%2FBjY614SHONfbvXCMOBvOEPAfZuqEXDZDI%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474578", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:58 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www48.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '358'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts102.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157607752895562", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"2914332291", "secret":"fd4400f0dd", "server":"3248", "farm":4,
+        "photos":17, "count_views":"101", "count_comments":"0", "count_photos":"17",
+        "count_videos":0, "title":{"_content":"Training Feijenoord"}, "description":{"_content":"These
+        photos were taken on a saturday at De Kuip in Rotterdam. The selection of
+        Feijenoord 1 was training there at the moment."}, "can_comment":1, "date_create":"1223214961",
+        "date_update":"1356165012", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:58 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157607757878689&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="1l84q2WOQzAskgG3WmnqPD4OQUvt3Vw9%2FiMIoxuZKO0%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474578", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:58 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www25.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '361'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts123.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157607757878689", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"2914105201", "secret":"ae046eb2ea", "server":"3090", "farm":4,
+        "photos":15, "count_views":"41", "count_comments":"0", "count_photos":"15",
+        "count_videos":0, "title":{"_content":"Rotterdam Road Races"}, "description":{"_content":"The
+        Rotterdam Road Races is an event with several races like the Fortis 1\/2 Marathon
+        Rotterdam, AD 10 Km Loop and Rotterdam on Wheels."}, "can_comment":1, "date_create":"1223208582",
+        "date_update":"1356165012", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:58 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157607755852863&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="ud%2FqjdMSOILtGxKV4PDWwlAdo1HVUqwvtXG1KZa0jVA%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474578", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:59 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www246.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '379'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts119.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157607755852863", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"2914800312", "secret":"eac896c089", "server":"3197", "farm":4,
+        "photos":19, "count_views":"61", "count_comments":"0", "count_photos":"19",
+        "count_videos":0, "title":{"_content":"Streetmasters ''08"}, "description":{"_content":"Streetmasters
+        is a streetsportevent with battles for inline skaters, skateboarders, BMX-ers,
+        breakdancers and streetdancers. This was the finale at Westblaak in Rotterdam."},
+        "can_comment":1, "date_create":"1223203353", "date_update":"1356165012", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:59 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157607733513100&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="Jz8Fy3eNRhsqCRztqPFTfFOKW2v6wiSSi8oE9546Ac4%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474579", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:59 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www105.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '299'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts118.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157607733513100", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"2912489161", "secret":"d2fb34f716", "server":"3105", "farm":4,
+        "photos":24, "count_views":"67", "count_comments":"0", "count_photos":"24",
+        "count_videos":0, "title":{"_content":"Diergaarde Blijdorp"}, "description":{"_content":"Rotterdam
+        Zoo: Diergaarde Blijdorp"}, "can_comment":1, "date_create":"1223156815", "date_update":"1356165012",
+        "coverphoto_server":"0", "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:22:59 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157607758936165&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="a4WwKY8E0PC74rBv1rjqIiWZDEqbi19RuW%2BCw0y0nXE%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474579", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:22:59 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www84.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '381'
+      Content-Type:
+      - application/json
+      Age:
+      - '2'
+      Via:
+      - http/1.1 fts104.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157607758936165", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"2914184769", "secret":"26ca769e6a", "server":"3100", "farm":4,
+        "photos":23, "count_views":"65", "count_comments":"0", "count_photos":"23",
+        "count_videos":0, "title":{"_content":"I (heart) Threadless"}, "description":{"_content":"Photos
+        from our so-called &quot;I (heart) Threadless&quot; photoshoot for our profile
+        on the Threadless website. It took place under the Brienenoordbrug in Rotterdam."},
+        "can_comment":1, "date_create":"1223211099", "date_update":"1356165013", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:23:00 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157604876037835&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="67qEfAY1vH2J%2BnT0q1vjskUbC28Ww8k6KS9kcn5Z8kk%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474580", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:23:00 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www7.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '350'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts125.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157604876037835", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3514636763", "secret":"f13062d9e4", "server":"3317", "farm":4,
+        "photos":16, "count_views":"330", "count_comments":"0", "count_photos":"16",
+        "count_videos":0, "title":{"_content":"Me, Myself & I"}, "description":{"_content":"The
+        title of this set says it all. These are obviously selfportrets or images
+        of me made by other people."}, "can_comment":1, "date_create":"1209896547",
+        "date_update":"1356165012", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:23:00 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157613432665353&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="9h0ESbOgC7CKR0wYMUqdKpTDmFUyQ%2F3n%2FC5nfPjL2QY%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474580", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:23:00 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www63.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '285'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts119.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157613432665353", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3831523902", "secret":"9cf20046e1", "server":"3534", "farm":4,
+        "photos":33, "count_views":"64", "count_comments":"0", "count_photos":"33",
+        "count_videos":0, "title":{"_content":"Portraits"}, "description":{"_content":"Portraits
+        of people."}, "can_comment":1, "date_create":"1233996281", "date_update":"1356165012",
+        "coverphoto_server":"0", "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:23:00 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157607956377672&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="uHBGYpUwfteMExT50hv60%2BYNfAWt0lXBQg5K6JFEAts%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474580", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:23:00 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www290.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '405'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts107.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157607956377672", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"2933987351", "secret":"22ce24ddf9", "server":"3179", "farm":4,
+        "photos":21, "count_views":"86", "count_comments":"0", "count_photos":"21",
+        "count_videos":0, "title":{"_content":"Egypt"}, "description":{"_content":"In
+        August 2008 I went to Sharm El-Sheikh, Egypt with my brother. We''ve also
+        visited Cairo while we were there. All of these were taken with my Fujifilm
+        FinePix s9600 (which I''ve sold)."}, "can_comment":1, "date_create":"1223824830",
+        "date_update":"1356165012", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:23:00 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157607747813484&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="iunw6uwDKLONkj%2BNWf9wiLwQ2PLiJgOFGf8x8uevDzw%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474580", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:23:01 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www93.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '361'
+      Content-Type:
+      - application/json
+      Age:
+      - '1'
+      Via:
+      - http/1.1 fts121.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157607747813484", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"2914660920", "secret":"577a301104", "server":"3190", "farm":4,
+        "photos":11, "count_views":"21", "count_comments":"0", "count_photos":"11",
+        "count_videos":0, "title":{"_content":"Wereld havendagen"}, "description":{"_content":"The
+        world harbor day is a large event in Rotterdam. It is meant to show what takes
+        place in Europe''s biggest port."}, "can_comment":1, "date_create":"1223197948",
+        "date_update":"1356165012", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:23:01 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157608065768431&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="4Gv0leWZzP8EUH54lBh2KV4bRJwbTqkIUeqUhXqWET8%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474581", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:23:01 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www303.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '328'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts112.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157608065768431", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3260304504", "secret":"b566f0c1fa", "server":"3403", "farm":4,
+        "photos":8, "count_views":"315", "count_comments":"0", "count_photos":"8",
+        "count_videos":0, "title":{"_content":"Gadgets & Gear"}, "description":{"_content":"This
+        set contains photos from my gadgets, gear and other shots that fit this set."},
+        "can_comment":1, "date_create":"1224100790", "date_update":"1356165012", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:23:01 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157602136210676&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="rnlYGvr6MRwoz9ZvE51ule%2B4XQfCqpTIinrVsKEjt2o%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474581", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:23:02 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www155.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '389'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts109.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157602136210676", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"2463323643", "secret":"49c99715da", "server":"2393", "farm":3,
+        "photos":9, "count_views":"154", "count_comments":"0", "count_photos":"9",
+        "count_videos":0, "title":{"_content":"Cars"}, "description":{"_content":"The
+        photos in this set are of my cars. The first are from my Honda Civic 1.5 LSi
+        ''93, which I''ve sold in the meanwhile. The other photos are from my BMW
+        316i Compact from ''98, which I currently own."}, "can_comment":1, "date_create":"1190657188",
+        "date_update":"1356165012", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:23:02 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157609118757238&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="NlRWbQGoQTufWUsIPe1ExUrk8OwIIvfCTVjtyBM%2Bm8s%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474582", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:23:02 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www91.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '342'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts116.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157609118757238", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"2979327772", "secret":"1709ca8191", "server":"3048", "farm":4,
+        "photos":101, "count_views":"79", "count_comments":"0", "count_photos":"101",
+        "count_videos":0, "title":{"_content":"Bokeh"}, "description":{"_content":"Photographs
+        that I''ve taken with out-of-focus areas in it produced by a shallow depth
+        of field."}, "can_comment":1, "date_create":"1226764945", "date_update":"1356165012",
+        "coverphoto_server":"0", "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:23:02 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157608164792364&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="cJA6IX4490GQCVCMCJukwCK13nkPxBogTXbtBLSfPC8%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474582", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:23:02 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www323.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '329'
+      Content-Type:
+      - application/json
+      Age:
+      - '3'
+      Via:
+      - http/1.1 fts114.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157608164792364", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"2955114833", "secret":"7322751b77", "server":"3029", "farm":4,
+        "photos":26, "count_views":"46", "count_comments":"0", "count_photos":"26",
+        "count_videos":0, "title":{"_content":"Selective Colors"}, "description":{"_content":"This
+        set contains photos that are mainly black and white with a selective color."},
+        "can_comment":1, "date_create":"1224414579", "date_update":"1356165012", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:23:03 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157608177901148&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="dpAepG0w2OrC117J%2F%2BIXC9RtFia4cI80rpeHZQlrTfc%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474583", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:23:04 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www117.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '363'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts107.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157608177901148", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3643167761", "secret":"32da16b737", "server":"2465", "farm":3,
+        "photos":208, "count_views":"43", "count_comments":"0", "count_photos":"208",
+        "count_videos":0, "title":{"_content":"Black & White"}, "description":{"_content":"The
+        title of this set is pretty self explanatory, but just to make it more clear...
+        it contains black and white photographs."}, "can_comment":1, "date_create":"1224448207",
+        "date_update":"1356165013", "coverphoto_server":"0", "coverphoto_farm":0},
+        "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:23:04 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157609130124623&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="9COwieIvIiuiYbjQLy%2BdTC%2FOz%2FHBKK%2BUMZWZ0RunCfU%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474584", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:23:05 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www85.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '280'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts105.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157609130124623", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"3031746973", "secret":"179aa08c2e", "server":"3294", "farm":4,
+        "photos":8, "count_views":"35", "count_comments":"0", "count_photos":"8",
+        "count_videos":0, "title":{"_content":"Product Photography"}, "description":{"_content":""},
+        "can_comment":1, "date_create":"1226763941", "date_update":"1356165012", "coverphoto_server":"0",
+        "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:23:05 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157600303479345&method=flickr.photosets.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<KUVA_API_KEY>",
+        oauth_nonce="uVkZA3hup3KT4KRRYizf%2BClGs%2BAKNeErJCsYRTAHqVk%3D", oauth_signature="<KUVA_SHARED_SECRET>%26<KUVA_ACCESS_SECRET>",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1397474585", oauth_token="<KUVA_ACCESS_TOKEN>",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Apr 2014 11:23:06 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www46.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '290'
+      Content-Type:
+      - application/json
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts119.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r08.ycpi.ams.yahoo.net (ApacheTrafficServer/4.0.2 [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"photoset":{"id":"72157600303479345", "owner":"8558751@N06", "username":"ktnl",
+        "primary":"2464410072", "secret":"99a2e64e3e", "server":"2272", "farm":3,
+        "photos":7, "count_views":"54", "count_comments":"0", "count_photos":"7",
+        "count_videos":0, "title":{"_content":"Nature"}, "description":{"_content":"Flora,
+        fauna and landscapes."}, "can_comment":1, "date_create":"1180873266", "date_update":"1356165017",
+        "coverphoto_server":"0", "coverphoto_farm":0}, "stat":"ok"}'
+    http_version: 
+  recorded_at: Mon, 14 Apr 2014 11:23:06 GMT
+recorded_with: VCR 2.9.0

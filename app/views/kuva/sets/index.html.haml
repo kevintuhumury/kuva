@@ -1,7 +1,7 @@
 %h1 Photosets
 
-%ul
+%ul.photosets
   - @photosets.each do |set|
     %li
-      = link_to set_url(set.id) do
+      = link_to set_url(set.id), title: set.title do
         = image_tag set.image_url

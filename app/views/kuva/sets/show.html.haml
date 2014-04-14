@@ -2,5 +2,5 @@
 
 .photos
   - @photos.each do |photo|
-    = link_to set_photo_url(set_id: @photoset.id, id: photo.id) do
+    = link_to set_photo_url(set_id: @photoset.id, id: photo.id), title: photo.title do
       = image_tag photo.url_n, alt: photo.title
