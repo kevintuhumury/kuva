@@ -9,7 +9,7 @@ describe Kuva::ApplicationHelper, :vcr do
     subject { helper.breadcrumbs_for photoset }
 
     context "when the current page is the set page" do
-      before { allow(helper).to receive(:current_page?).and_return true }
+      before { allow(helper).to receive(:photoset_page?).and_return true }
 
       it "creates a breadcrumb without the set URL" do
         expect(subject).to eq '<ul class="breadcrumbs"><li><a href="http://test.host/kuva/">Photosets</a></li></ul>'

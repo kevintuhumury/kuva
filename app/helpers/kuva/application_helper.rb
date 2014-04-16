@@ -3,7 +3,7 @@ module Kuva
 
     def breadcrumbs_for(photoset)
       content = capture do
-        if current_page? kuva.sets_url
+        if photoset_page?
           concat content_tag(:li, link_to_root_url)
         else
           concat content_tag(:li, link_to_root_url)
@@ -15,6 +15,10 @@ module Kuva
     end
 
     private
+
+    def photoset_page?
+      controller.controller_name == "sets" && controller.action_name == "show"
+    end
 
     def link_to_root_url
       link_to t("kuva.photosets.title"), kuva.root_url
