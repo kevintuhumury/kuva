@@ -3,5 +3,6 @@
 %ul.photosets
   - @photosets.each do |set|
     %li
-      = link_to set_url(set.id), title: set.title do
-        = image_tag set.image_url
+      .title= set.title
+      = link_to set_url(set.id) do
+        = image_tag set.image_url, alt: set.title

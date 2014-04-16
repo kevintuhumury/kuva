@@ -14,8 +14,8 @@ feature "photoset collection", :vcr do
     expect(page).to have_selector "h1", text: "Photosets"
 
     within "ul.photosets li:first" do
-      expect(page).to have_link "Paris"
-      click_link "Paris"
+      expect(page).to have_content "Paris"
+      find(:xpath, ".//a/img[@alt='Paris']/..").click
     end
 
     expect(page).to have_selector "h1", text: "Paris"
