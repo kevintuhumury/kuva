@@ -1,5 +1,6 @@
 require "flickraw"
 require "haml"
+require "coffee-rails"
 
 module Kuva
   mattr_accessor :api_key, :shared_secret, :access_token, :access_secret
