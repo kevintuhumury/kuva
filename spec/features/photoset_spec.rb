@@ -7,7 +7,11 @@ feature "photoset", :vcr do
   background { visit kuva.set_path(id: photoset_id) }
 
   scenario "viewing the first photoset of the photoset collection" do
-    expect(page).to have_selector "ul.breadcrumbs li", text: "Photosets"
+    within "ul.breadcrumbs" do
+      expect(page).to have_selector "li", text: "Photosets"
+      expect(page).not_to have_selector "li", text: "Paris"
+    end
+
     expect(page).to have_selector "h1", text: "Paris"
     expect(page).to have_selector ".photos a img", count: 28
   end
@@ -21,6 +25,7 @@ feature "photoset", :vcr do
 
     expect(page).to have_selector "h1", text: "Photosets"
     expect(page).not_to have_selector "h1", text: "Paris"
+    expect(page).not_to have_selector "ul.breadcrumbs"
   end
 
   scenario "navigating to the page with details of the first photo" do

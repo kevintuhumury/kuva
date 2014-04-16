@@ -7,6 +7,7 @@ feature "photoset collection", :vcr do
   scenario "viewing the photoset collection" do
     expect(page).to have_selector "h1", text: "Photosets"
     expect(page).to have_selector "ul.photosets li a img", count: 40
+    expect(page).not_to have_selector "ul.breadcrumbs"
   end
 
   scenario "navigating to the page with photos of the first photoset" do

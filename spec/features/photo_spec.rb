@@ -22,11 +22,19 @@ feature "photo", :vcr do
     expect(page).to have_selector "h1", text: "Top of the Eiffel Tower"
 
     within "ul.breadcrumbs" do
+      expect(page).to have_selector "li", text: "Photosets"
+      expect(page).to have_selector "li", text: "Paris"
+
       click_link "Paris"
     end
 
     expect(page).to have_selector "h1", text: "Paris"
     expect(page).not_to have_selector "h1", text: "Top of the Eiffel Tower"
+
+    within "ul.breadcrumbs" do
+      expect(page).to have_selector "li", text: "Photosets"
+      expect(page).not_to have_selector "li", text: "Paris"
+    end
   end
 
 end
