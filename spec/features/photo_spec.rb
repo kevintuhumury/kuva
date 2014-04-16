@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "photoset", :vcr do
+feature "photo", :vcr do
 
   let(:photoset_id) { "72157632367381040" }
   let(:photo_id)    { "8318972536" }
