@@ -1,0 +1,42 @@
+@import "compass/css3"
+@import "compass/typography"
+
+$font-size: 14px
+$padding: 2px
+
+body
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+
+ul.breadcrumbs
+  +inline-block-list
+
+  li
+    &:first-child
+      a
+        padding-left: 0
+
+    &:nth-child(2):before
+      content: "\00BB"
+
+    a
+      padding: 5px
+      text-decoration: none
+      font-size: $font-size
+
+ul.photosets
+  +inline-block-list
+
+  li
+    position: relative
+    padding: $padding
+
+    .title
+      +single-text-shadow(rgba(0, 0, 0, 1), 1px, 1px, 1px)
+      +force-wrap
+      position: absolute
+      left: $padding
+      right: $padding
+      bottom: 2 * $padding
+      padding: 2 * $padding
+      font-size: $font-size
+      color: #fff
