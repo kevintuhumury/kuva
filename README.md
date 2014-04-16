@@ -23,11 +23,21 @@ Or install it yourself:
 
 ## Authorize Kuva
 
-To use Kuva you'll need to authorize the gem with Flickr. In order to do that, you'll need to apply for an API key and shared secret. When that's done, you'll need to run the `kuva:authorize` rake task, but first things first.
+To use Kuva you'll need to authorize the gem with Flickr. In order to do that, you'll need to apply for an API key and shared secret. When that's done, you'll need to supply those values to the Kuva setup block. Afterwards you need run the `kuva:authorize` rake task, but first things first.
 
 ### Apply for an API key and shared secret
 
 You can retrieve an API key and shared secret from Flickr by [creating a new application](https://www.flickr.com/services/apps). Just follow the instructions and once you've received the API key and shared secret, move on to the next step.
+
+### Filling in Kuva's configuration options
+
+Now that we've got an API key and shared secret, let's put them to use. Configuring Kuva is pretty easy. First run the following:
+
+	rails generate kuva:install
+
+This will install an initializer called `config/initializer/kuva.rb` in your Rails application. Use the previously acquired variables to fill in the Kuva setup block in that file.
+
+Hang on, we're almost there.
 
 ### Run the `kuva:authorize` rake task
 
@@ -54,11 +64,11 @@ Take note of the variables and save them, since you'll need them to use Kuva.
 
 ## Configuration
 
-Now that we've got the required variables, let's put them to use. Configuring Kuva is pretty easy. First run the following:
+As described in the previous part we've now got the required variables, so let's put them to use. As mentioned earlier configuring Kuva is as easy as running the following:
 
 	rails generate kuva:install
 
-This will install an initializer called `config/initializer/kuva.rb` in your Rails application. Use the previously acquired variables to fill in the Kuva setup block in that file.
+That installed an initializer called `config/initializer/kuva.rb` in your Rails application. You've already filled in your API key an shared secret in that file, now fill in the missing configuration options with the previously acquired variables.
 
 Besides the `API key`, `shared secret`, `access token` and `access token secret` you're able to set the `cache expiration` of the Flickr API calls as well.
 
