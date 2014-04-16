@@ -1,5 +1,5 @@
 module Kuva
-  class ApplicationController < ActionController::Base
+  class ApplicationController < ::ApplicationController
 
     before_action :configure_kuva
 
