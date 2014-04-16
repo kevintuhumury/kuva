@@ -43,19 +43,21 @@ module Kuva
 
         it "outputs a notice about the authentication url" do
           allow(subject).to receive(:authentication_url).and_return "<url>"
-          expect(output).to include "\nCopy the URL below and follow the steps on Flickr to authorize kuva:\n<url>"
+          expect(output).to include "\nCopy the URL below and follow the steps on Flickr to authorize Kuva:\n<url>"
         end
 
         it "outputs a notice about the authentication code" do
-          expect(output).to include "\nOnce you've authorized kuva, you'll receive a code (in the form of xxx-xxx-xxx) from Flickr. Copy and paste that code here:\n"
+          expect(output).to include "\nOnce you've authorized Kuva, you'll receive a code (in the form of xxx-xxx-xxx) from Flickr. Copy and paste that code here and press <enter>:\n"
         end
 
         it "outputs a confirmation notice" do
+          allow(Kuva).to receive(:api_key).and_return "<api_key>"
+          allow(Kuva).to receive(:shared_secret).and_return "<shared_secret>"
           subject.stub_chain(:flickr, :test, :login, :username).and_return "<username>"
           subject.stub_chain(:flickr, :access_token).and_return "<access_token>"
           subject.stub_chain(:flickr, :access_secret).and_return "<access_secret>"
 
-          expect(output).to include "\nYou've successfully authenticated kuva to use your account: '<username>' with the following token '<access_token>' and secret '<access_secret>'."
+          expect(output).to include "\n<username>, you've successfully authorized Kuva with Flickr. As you can see we've received your username. Besides that we've got the following access token '<access_token>' and access secret '<access_secret>'. Both the API key, shared secret and the previously mentioned variables should be saved for later use. They're all listed below. Place them in `config/initializers/kuva.rb` and you're good to go.\n\n\tapi_key:       <api_key>\n\tshared_secret: <shared_secret>\n\taccess_token:  <access_token>\n\taccess_secret: <access_secret>\n\n"
         end
       end
 

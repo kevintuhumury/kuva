@@ -18,7 +18,7 @@ module Kuva
 
       begin
         flickr.get_access_token oauth_token, oauth_token_secret, authorization_code
-        puts I18n.t("kuva.authentication.success", account: flickr.test.login.username, token: flickr.access_token, secret: flickr.access_secret)
+        puts I18n.t("kuva.authentication.success", account: flickr.test.login.username, api_key: Kuva.api_key, shared_secret: Kuva.shared_secret, access_token: flickr.access_token, access_secret: flickr.access_secret)
       rescue FlickRaw::OAuthClient::FailedResponse => error
         puts I18n.t("kuva.authentication.error", message: error)
       end
