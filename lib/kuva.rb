@@ -1,6 +1,7 @@
 require "flickraw"
 require "haml"
 require "sass-rails"
+require "compass-rails"
 require "coffee-rails"
 
 module Kuva

@@ -21,4 +21,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency "haml"
   gem.add_dependency "sass-rails", "~> 4.0.0"
   gem.add_dependency "coffee-rails", "~> 4.0.0"
+  gem.add_dependency "compass-rails"
 end
