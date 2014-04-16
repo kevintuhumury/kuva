@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    kuva (0.0.1)
+    kuva (0.0.2)
       coffee-rails (~> 4.0.0)
       compass-rails
       flickraw
