@@ -1,0 +1,15 @@
+ul.breadcrumbs
+  +inline-block-list
+
+  li
+    &:first-child
+      a
+        padding-left: 0
+
+    &:nth-child(2):before
+      content: "\00BB"
+
+    a
+      padding: 5px
+      text-decoration: none
+      font-size: $font-size
