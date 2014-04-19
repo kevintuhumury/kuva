@@ -21,6 +21,11 @@ module Kuva
         expect(locale).to exist
       end
 
+      it "generates assets" do
+        expect_any_instance_of(described_class).to receive(:generate).with "kuva:assets"
+        generator.invoke :create_assets
+      end
+
       after do
         FileUtils.rm_rf File.expand_path("../../../../tmp", __FILE__)
       end

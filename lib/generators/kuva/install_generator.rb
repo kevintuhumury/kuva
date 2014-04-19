@@ -15,6 +15,10 @@ module Kuva
         copy_file "../../../../config/locales/frontend.yml", "config/locales/kuva.en.yml"
       end
 
+      def create_assets
+        generate "kuva:assets"
+      end
+
     end
   end
 end
