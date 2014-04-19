@@ -9,7 +9,10 @@ module Kuva
       let(:initializer) { file("config/initializers/kuva.rb") }
       let(:locale)      { file("config/locales/kuva.en.yml") }
 
-      before { prepare_destination }
+      before do
+        prepare_destination
+        prepare_config_routes
+      end
 
       it "generates config/initializers/kuva.rb" do
         capture(:stdout) { generator.invoke :copy_initializer }
@@ -26,8 +29,33 @@ module Kuva
         generator.invoke :create_assets
       end
 
+      context "mounting of the Kuva engine" do
+        context "when it has been mounted" do
+          before { described_class.any_instance.stub_chain(:original_routes, :include?).and_return true }
+
+          it "outputs a status message" do
+            expect_any_instance_of(described_class).to receive(:say_status).with "skip", "mounting of Kuva into config/routes.rb", :yellow
+            generator.invoke :mount_engine
+          end
+        end
+
+        context "when it hasn't been mounted" do
+          it "mounts the Kuva engine" do
+            capture(:stdout) { generator.invoke :mount_engine }
+            expect(routes).to contain 'mount Kuva::Engine => "/kuva"'
+          end
+        end
+      end
+
       after do
-        FileUtils.rm_rf File.expand_path("../../../../tmp", __FILE__)
+        FileUtils.rm_rf destination_root
+      end
+
+      def prepare_config_routes
+        FileUtils.mkdir "#{destination_root}/config"
+        File.open("#{destination_root}/config/routes.rb", "w+") do |file|
+          file.write "Rails.application.routes.draw do\nend"
+        end
       end
     end
   end

@@ -19,6 +19,20 @@ module Kuva
         generate "kuva:assets"
       end
 
+      def mount_engine
+        if original_routes.include? "mount Kuva::Engine"
+          say_status "skip", "mounting of Kuva into config/routes.rb", :yellow
+        else
+          route 'mount Kuva::Engine => "/kuva"'
+        end
+      end
+
+      private
+
+      def original_routes
+        File.read "config/routes.rb"
+      end
+
     end
   end
 end
