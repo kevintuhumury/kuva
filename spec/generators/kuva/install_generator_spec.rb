@@ -9,16 +9,15 @@ module Kuva
       let(:initializer) { file("config/initializers/kuva.rb") }
       let(:locale)      { file("config/locales/kuva.en.yml") }
 
-      before do
-        prepare_destination
-        run_generator
-      end
+      before { prepare_destination }
 
       it "generates config/initializers/kuva.rb" do
+        capture(:stdout) { generator.invoke :copy_initializer }
         expect(initializer).to exist
       end
 
       it "generates config/locales/kuva.en.yml" do
+        capture(:stdout) { generator.invoke :copy_locale }
         expect(locale).to exist
       end
 
