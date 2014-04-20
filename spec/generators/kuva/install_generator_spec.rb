@@ -8,6 +8,7 @@ module Kuva
 
       let(:initializer) { file("config/initializers/kuva.rb") }
       let(:locale)      { file("config/locales/kuva.en.yml") }
+      let(:routes)      { file("config/routes.rb") }
 
       before do
         prepare_destination
