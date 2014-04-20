@@ -28,7 +28,7 @@ To use Kuva you'll need to authorize the gem with Flickr. In order to do that, y
 
 ### Step 1: Apply for an API key and shared secret
 
-You can retrieve an API key and shared secret from Flickr by [creating a new application](https://www.flickr.com/services/apps). Just follow the instructions and once you've received the API key and shared secret, move on to the step two.
+You can retrieve an API key and shared secret from Flickr by [creating a new application](https://www.flickr.com/services/apps). Just follow the instructions and once you've received the API key and shared secret, move on to step two.
 
 ### Step 2: Filling in Kuva's configuration options
 
