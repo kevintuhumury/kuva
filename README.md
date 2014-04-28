@@ -141,13 +141,13 @@ You're very welcome to contribute to this gem. To do so, please follow these ste
 
 Kuva has some basic functionality, but it can always be improved. Some features that might be useful:
 
-- Pagination (e.g. kaminari) on the photoset collection and photoset view (when you've got a lot of photosets or photos)
-- Navigating through the photosets and photos (going to the next one)
-- Adding a photostream
-- Adding exif data to the photo view
-- Adding geo data to the photo view
-- Adding tags (including filtering by those tags)
-- Adding comments (or simply showing them)
+- [ ] Pagination (e.g. kaminari) on the photoset collection and photoset view (when you've got a lot of photosets or photos)
+- [ ] Navigating through the photosets and photos (going to the next one)
+- [ ] Adding a photostream
+- [ ] Adding exif data to the photo view
+- [ ] Adding geo data to the photo view
+- [ ] Adding tags (including filtering by those tags)
+- [ ] Adding comments (or simply showing them)
 
 When you would like to contribute, but you're not sure what to add, pick something from the list above. If you start on one of them, please [add a new issue](https://github.com/kevintuhumury/kuva/issues/new) (to claim a feature), so that we don't get multiple pull requests for the same functionality.
 
