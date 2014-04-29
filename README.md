@@ -1,6 +1,6 @@
 # Kuva
 
-[![Build Status](https://travis-ci.org/kevintuhumury/kuva.png)](https://travis-ci.org/kevintuhumury/kuva)
+[![Build Status](https://travis-ci.org/kevintuhumury/kuva.svg)](https://travis-ci.org/kevintuhumury/kuva)
 [![Gem Version](https://badge.fury.io/rb/kuva.svg)](http://badge.fury.io/rb/kuva)
 [![Dependency Status](https://gemnasium.com/kevintuhumury/kuva.png)](https://gemnasium.com/kevintuhumury/kuva)
 [![Code Climate](https://codeclimate.com/github/kevintuhumury/kuva.png)](https://codeclimate.com/github/kevintuhumury/kuva)
