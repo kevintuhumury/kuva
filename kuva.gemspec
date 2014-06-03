@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
   gem.files       = `git ls-files`.split("\n")
   gem.test_files  = `git ls-files -- spec/**/*`.split("\n")
 
-  gem.add_dependency "rails", "~> 4.1", ">= 4.1.0"
+  gem.add_dependency "rails", "~> 4.1", ">= 4.1.1"
   gem.add_dependency "flickraw"
   gem.add_dependency "haml"
   gem.add_dependency "sass-rails", "~> 4.0.0"
