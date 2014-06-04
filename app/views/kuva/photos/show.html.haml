@@ -1,6 +1,6 @@
 = breadcrumbs_for @photoset
 
 %h1= @photo.title
-%p= @photo.description
+%p= @photo.description.html_safe
 
 = image_tag @photo.url, alt: @photo.title
