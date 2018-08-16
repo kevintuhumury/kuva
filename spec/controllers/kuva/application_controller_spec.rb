@@ -1,14 +1,14 @@
 require "spec_helper"
 
 module Kuva
-  describe ApplicationController do
+  describe ApplicationController, type: :controller do
     controller(ApplicationController) do
       def index
-        render text: "testing before_action with anonymous controller"
+        render plain: "testing before_action with anonymous controller"
       end
     end
 
-    context "configuring Kuva", :vcr do
+    context "configuring Kuva", vcr: true do
       it "sets the API key" do
         allow(Kuva).to receive(:api_key).and_return "<api_key>"
         get :index

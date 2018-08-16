@@ -16,12 +16,12 @@ module Kuva
       end
 
       it "generates config/initializers/kuva.rb" do
-        capture(:stdout) { generator.invoke :copy_initializer }
+        expect { generator.invoke :copy_initializer }.to output(/.*/).to_stdout
         expect(initializer).to exist
       end
 
       it "generates config/locales/kuva.en.yml" do
-        capture(:stdout) { generator.invoke :copy_locale }
+        expect { generator.invoke :copy_locale }.to output(/.*/).to_stdout
         expect(locale).to exist
       end
 
@@ -32,7 +32,7 @@ module Kuva
 
       context "mounting of the Kuva engine" do
         context "when it has been mounted" do
-          before { described_class.any_instance.stub_chain(:original_routes, :include?).and_return true }
+          before { allow_any_instance_of(described_class).to receive_message_chain(:original_routes, :include?).and_return true }
 
           it "outputs a status message" do
             expect_any_instance_of(described_class).to receive(:say_status).with "skip", "mounting of Kuva into config/routes.rb", :yellow
@@ -42,7 +42,7 @@ module Kuva
 
         context "when it hasn't been mounted" do
           it "mounts the Kuva engine" do
-            capture(:stdout) { generator.invoke :mount_engine }
+            expect { generator.invoke :mount_engine }.to output(/.*/).to_stdout
             expect(routes).to contain 'mount Kuva::Engine => "/kuva"'
           end
         end

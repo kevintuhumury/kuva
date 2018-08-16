@@ -1,8 +1,8 @@
 require "spec_helper"
 
 module Kuva
-  describe PhotosController, :vcr do
-    let(:view_photo) { get :show, id: photo_id, set_id: "72157632367381040", use_route: :kuva }
+  describe PhotosController, type: :controller, vcr: true do
+    let(:view_photo) { get :show, params: { id: photo_id, set_id: "72157632367381040", use_route: :kuva } }
 
     let(:photo_id)   { "8317914535" }
     let(:photo)      { assigns :photo }

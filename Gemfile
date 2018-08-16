@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 # Declare your gem's dependencies in kuva.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -11,16 +11,17 @@ gemspec
 # your gem to rubygems.org.
 
 group :development, :test do
-  gem "dotenv-rails"
-  gem "rspec-rails"
-  gem "sqlite3"
+  gem 'rails-controller-testing'
+  gem 'dotenv-rails'
+  gem 'rspec-rails'
+  gem 'sqlite3'
 end
 
 group :test do
-  gem "capybara"
-  gem "vcr"
-  gem "webmock"
-  gem "ammeter"
-  gem "simplecov"
-  gem "coveralls"
+  gem 'capybara'
+  gem 'vcr'
+  gem 'webmock'
+  gem 'ammeter'
+  gem 'simplecov'
+  gem 'coveralls'
 end

@@ -1,9 +1,7 @@
 language: ruby
 script: bundle exec rake
 rvm:
-  - 2.1.0
-  - 2.0.0
-  - 1.9.3
+  - 2.5.1
 env:
   global:
   - secure: bnOruf8nDL/RW73YuNdwFsk0Mp0lKc+cu2tYQj95oYluDVaE2HbHXGUsQ0h3xJXBPwZhQTm5eSqdIlAi9WBau8XZ+yAzMFOtF2MhiZYChS7ZoSHBFZMwaL0aWFKC6R50niNHWXhvvg+63hDvMuG+5VWQobeIjac7WWriiSuAvSE=
