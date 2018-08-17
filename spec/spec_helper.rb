@@ -10,7 +10,6 @@ end
 ENV["RAILS_ENV"] ||= "test"
 require File.expand_path("../dummy/config/environment", __FILE__) if Dir.exists?("spec/dummy")
 require "rspec/rails"
-require "rspec/autorun"
 require "capybara/rails"
 
 # Requires supporting ruby files with custom matchers and macros, etc,
@@ -31,9 +30,6 @@ RSpec.configure do |config|
     flickr.access_token    = Kuva.access_token  = ENV["KUVA_ACCESS_TOKEN"]
     flickr.access_secret   = Kuva.access_secret = ENV["KUVA_ACCESS_SECRET"]
   end
-
-  # instead of specifying ":vcr => true", we can specify just ":vcr"
-  config.treat_symbols_as_metadata_keys_with_true_values = true
 
   # ## Mock Framework
   #
@@ -65,4 +61,15 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+  # rspec-rails 3 will no longer automatically infer an example group's spec type
+  # from the file location. You can explicitly opt-in to the feature using this
+  # config option.
+  # To explicitly tag specs without using automatic inference, set the `:type`
+  # metadata manually:
+  #
+  #     describe ThingsController, :type => :controller do
+  #       # Equivalent to being in spec/controllers
+  #     end
+  config.infer_spec_type_from_file_location!
 end

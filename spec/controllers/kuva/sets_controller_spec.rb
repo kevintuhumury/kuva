@@ -1,9 +1,9 @@
 require "spec_helper"
 
 module Kuva
-  describe SetsController, :vcr do
+  describe SetsController, type: :controller, vcr: true do
     describe "#index" do
-      let(:view_index) { get :index, use_route: :kuva }
+      let(:view_index) { get :index, params: { use_route: :kuva } }
 
       let(:photosets) { assigns :photosets }
 
@@ -26,7 +26,7 @@ module Kuva
     end
 
     describe "#show" do
-      let(:view_photoset) { get :show, id: "72157632367381040", use_route: :kuva }
+      let(:view_photoset) { get :show, params: { id: "72157632367381040", use_route: :kuva } }
 
       let(:collection) { Kuva::Elements::PhotosetCollection.retrieve }
       let(:photoset)   { assigns :photoset }
